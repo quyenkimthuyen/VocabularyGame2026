@@ -9,7 +9,12 @@ const vocabData = {
         { word: 'Giraffe', emoji: '🦒', ipa: '🇺🇸 /dʒɪˈræf/' },
         { word: 'Rabbit', emoji: '🐰', ipa: '🇺🇸 /ˈræb.ɪt/' },
         { word: 'Tiger', emoji: '🐯', ipa: '🇺🇸 /ˈtaɪ.ɡɚ/' },
-        { word: 'Panda', emoji: '🐼', ipa: '🇺🇸 /ˈpæn.də/' }
+        { word: 'Panda', emoji: '🐼', ipa: '🇺🇸 /ˈpæn.də/' },
+        { word: 'Kangaroo', emoji: '🦘', ipa: '🇺🇸 /kæŋɡəruː/' },
+        { word: 'Zebra', emoji: '🦓', ipa: '🇺🇸 /ˈzibrə/' },
+        { word: 'Hippo', emoji: '🦛', ipa: '🇺🇸 /ˈhɪpoʊ/' },
+        { word: 'Crocodile', emoji: '🐊', ipa: '🇺🇸 /ˈkrɒk.ə.daɪl/' },
+        { word: 'Dolphin', emoji: '🐬', ipa: '🇺🇸 /ˈdɒlfɪn/' }
     ],
     Fruits: [
         { word: 'Apple', emoji: '🍎', ipa: '🇺🇸 /ˈæp.əl/' },
@@ -21,7 +26,69 @@ const vocabData = {
         { word: 'Pineapple', emoji: '🍍', ipa: '🇺🇸 /ˈpaɪn.æp.əl/' },
         { word: 'Cherry', emoji: '🍒', ipa: '🇺🇸 /ˈtʃer.i/' },
         { word: 'Mango', emoji: '🥭', ipa: '🇺🇸 /ˈmæŋ.ɡoʊ/' },
-        { word: 'Pear', emoji: '🍐', ipa: '🇺🇸 /per/' }
+        { word: 'Pear', emoji: '🍐', ipa: '🇺🇸 /per/' },
+        { word: 'Kiwi', emoji: '🥝', ipa: '🇺🇸 /ˈkiːwi/' },
+        { word: 'Papaya', emoji: '🥭', ipa: '🇺🇸 /pæˈpaɪ.ə/' },
+        { word: 'Peach', emoji: '🍑', ipa: '🇺🇸 /piːtʃ/' },
+        { word: 'Plum', emoji: '🍈', ipa: '🇺🇸 /plʌm/' },
+        { word: 'Lemon', emoji: '🍋', ipa: '🇺🇸 /ˈlɛm.ən/' },
+        { word: 'Lime', emoji: '🍈', ipa: '🇺🇸 /laɪm/' },
+    ],
+    Verbs: [
+        { word: 'Run', emoji: '🏃', ipa: '🇺🇸 /rʌn/' },
+        { word: 'Jump', emoji: '🤾', ipa: '🇺🇸 /dʒʌmp/' },
+        { word: 'Swim', emoji: '🏊', ipa: '🇺🇸 /swɪm/' },
+        { word: 'Fly', emoji: '🪂', ipa: '🇺🇸 /flaɪ/' },
+        { word: 'Sing', emoji: '🎤', ipa: '🇺🇸 /sɪŋ/' },
+        { word: 'Dance', emoji: '💃', ipa: '🇺🇸 /dæns/' },
+        { word: 'Think', emoji: '🤔', ipa: '🇺🇸 /θɪŋk/' },
+        { word: 'Listen', emoji: '👂', ipa: '🇺🇸 /ˈlɪs.ən/' },
+        { word: 'Watch', emoji: '📺', ipa: '🇺🇸 /wɒtʃ/' },
+        { word: 'Cook', emoji: '👩‍🍳', ipa: '🇺🇸 /kʊk/' },
+        { word: 'Drive', emoji: '🚗', ipa: '🇺🇸 /draɪv/' },
+        { word: 'Buy', emoji: '🛒', ipa: '🇺🇸 /baɪ/' },
+        { word: 'Sell', emoji: '💰', ipa: '🇺🇸 /sɛl/' },
+        { word: 'Help', emoji: '🤝', ipa: '🇺🇸 /hɛlp/' },
+        { word: 'Play', emoji: '🎮', ipa: '🇺🇸 /pleɪ/' },
+        { word: 'Study', emoji: '📚', ipa: '🇺🇸 /ˈstʌdi/' },
+        { word: 'Travel', emoji: '✈️', ipa: '🇺🇸 /ˈtrævəl/' },
+        { word: 'Build', emoji: '🔨', ipa: '🇺🇸 /bɪld/' },
+        { word: 'Clean', emoji: '🧹', ipa: '🇺🇸 /kliːn/' },
+        { word: 'Sleep', emoji: '😴', ipa: '🇺🇸 /sliːp/' },
+        { word: 'Read', emoji: '📖', ipa: '🇺🇸 /riːd/' },
+        { word: 'Write', emoji: '✍️', ipa: '🇺🇸 /raɪt/' },
+        { word: 'Draw', emoji: '🖍️', ipa: '🇺🇸 /drɔː/' },
+        { word: 'Speak', emoji: '🗣️', ipa: '🇺🇸 /spiːk/' },
+        { word: 'Climb', emoji: '🧗', ipa: '🇺🇸 /klaɪm/' },
+        { word: 'Throw', emoji: '🏈', ipa: '🇺🇸 /θroʊ/' },
+        { word: 'Catch', emoji: '🤲', ipa: '🇺🇸 /kætʃ/' },
+        { word: 'Kick', emoji: '🥾', ipa: '🇺🇸 /kɪk/' },
+        { word: 'Hit', emoji: '👊', ipa: '🇺🇸 /hɪt/' },
+        { word: 'Push', emoji: '🤜', ipa: '🇺🇸 /pʊʃ/' },
+        { word: 'Pull', emoji: '🤚', ipa: '🇺🇸 /pʊl/' },
+        { word: 'Open', emoji: '🚪', ipa: '🇺🇸 /ˈoʊ.pən/' },
+        { word: 'Close', emoji: '🔒', ipa: '🇺🇸 /kloʊz/' },
+        { word: 'Turn', emoji: '🔄', ipa: '🇺🇸 /tɜːrn/' },
+        { word: 'Smile', emoji: '😊', ipa: '🇺🇸 /smaɪl/' },
+        { word: 'Laugh', emoji: '😂', ipa: '🇺🇸 /læf/' },
+        { word: 'Cry', emoji: '😢', ipa: '🇺🇸 /kraɪ/' },
+        { word: 'Pray', emoji: '🙏', ipa: '🇺🇸 /preɪ/' },
+        { word: 'Meditate', emoji: '🧘', ipa: '🇺🇸 /ˈmɛdɪteɪt/' },
+        { word: 'Celebrate', emoji: '🥳', ipa: '🇺🇸 /ˈsɛləbreɪt/' },
+        { word: 'Explore', emoji: '🧭', ipa: '🇺🇸 /ɪkˈsplɔːr/' },
+        { word: 'Discover', emoji: '🔎', ipa: '🇺🇸 /dɪsˈkʌvər/' },
+        { word: 'Choose', emoji: '🤔', ipa: '🇺🇸 /tʃuːz/' },
+        { word: 'Decide', emoji: '✅', ipa: '🇺🇸 /dɪˈsaɪd/' },
+        { word: 'Remember', emoji: '🧠', ipa: '🇺🇸 /rɪˈmɛm.bɚ/' },
+        { word: 'Forget', emoji: '❌', ipa: '🇺🇸 /fərˈɡɛt/' },
+        { word: 'Grow', emoji: '🌱', ipa: '🇺🇸 /ɡroʊ/' },
+        { word: 'Shrink', emoji: '📏', ipa: '🇺🇸 /ʃrɪŋk/' },
+        { word: 'Paint', emoji: '🎨', ipa: '🇺🇸 /peɪnt/' },
+        { word: 'Sew', emoji: '🧵', ipa: '🇺🇸 /soʊ/' },
+        { word: 'Code', emoji: '💻', ipa: '🇺🇸 /koʊd/' },
+        { word: 'Teach', emoji: '👩‍🏫', ipa: '🇺🇸 /tiːtʃ/' },
+        { word: 'Bark', emoji: '🐶', ipa: '🇺🇸 /bɑːrk/' },
+        { word: 'Meow', emoji: '🐱', ipa: '🇺🇸 /miˈaʊ/' },
     ],
     Colors: [
         { word: 'Red', emoji: '🟥', ipa: '🇺🇸 /red/' },
@@ -33,7 +100,12 @@ const vocabData = {
         { word: 'Pink', emoji: '💗', ipa: '🇺🇸 /pɪŋk/' },
         { word: 'Black', emoji: '⬛', ipa: '🇺🇸 /blæk/' },
         { word: 'White', emoji: '⬜', ipa: '🇺🇸 /waɪt/' },
-        { word: 'Brown', emoji: '🟫', ipa: '🇺🇸 /braʊn/' }
+        { word: 'Brown', emoji: '🟫', ipa: '🇺🇸 /braʊn/' },
+        { word: 'Cyan', emoji: '🟦', ipa: '🇺🇸 /ˈsaɪ.ən/' },
+        { word: 'Magenta', emoji: '🟪', ipa: '🇺🇸 /mæˈdʒɛnta/' },
+        { word: 'Gold', emoji: '🟨', ipa: '🇺🇸 /ɡoʊld/' },
+        { word: 'Silver', emoji: '⚪', ipa: '🇺🇸 /ˈsɪl.vər/' },
+        { word: 'Bronze', emoji: '🟫', ipa: '🇺🇸 /brɒnz/' },
     ],
     Food: [
         { word: 'Pizza', emoji: '🍕', ipa: '🇺🇸 /ˈpiːt.sə/' },
@@ -45,7 +117,12 @@ const vocabData = {
         { word: 'Sushi', emoji: '🍣', ipa: '🇺🇸 /ˈsuː.ʃi/' },
         { word: 'Cookie', emoji: '🍪', ipa: '🇺🇸 /ˈkʊk.i/' },
         { word: 'French Fries', emoji: '🍟', ipa: '🇺🇸 /frentʃ ˈfraɪz/' },
-        { word: 'Taco', emoji: '🌮', ipa: '🇺🇸 /ˈtɑː.koʊ/' }
+        { word: 'Taco', emoji: '🌮', ipa: '🇺🇸 /ˈtɑː.koʊ/' },
+        { word: 'Pasta', emoji: '🍝', ipa: '🇺🇸 /ˈpæstə/' },
+        { word: 'Rice', emoji: '🍚', ipa: '🇺🇸 /raɪs/' },
+        { word: 'Soup', emoji: '🍜', ipa: '🇺🇸 /suːp/' },
+        { word: 'Steak', emoji: '🥩', ipa: '🇺🇸 /steɪk/' },
+        { word: 'Eggs', emoji: '🥚', ipa: '🇺🇸 /eɡz/' },
     ],
     School: [
         { word: 'Backpack', emoji: '🎒', ipa: '🇺🇸 /ˈbæk.pæk/' },
@@ -125,7 +202,8 @@ let categoryLives = {
     School: 0,
     Jobs: 0,
     Vehicles: 0,
-    Sports: 0
+    Sports: 0,
+    Verbs: 0
 };
 
 function setDifficulty(level) {
@@ -165,7 +243,8 @@ let categoryScores = {
     School: 0,
     Jobs: 0,
     Vehicles: 0,
-    Sports: 0
+    Sports: 0,
+    Verbs: 0
 };
 
 // DOM Elements
@@ -317,6 +396,15 @@ function nextQuestion() {
     const ipaDisplay = document.getElementById('ipa-display');
     if (ipaDisplay) {
         ipaDisplay.innerText = currentWord.ipa || '';
+    }
+    
+    
+    
+    // Image display using placeholder service
+    const wordImg = document.getElementById('word-image');
+    if (wordImg) {
+        const encoded = encodeURIComponent(currentWord.word);
+        wordImg.src = `https://via.placeholder.com/150?text=${encoded}`;
     }
     
     optionsGrid.className = 'options-grid cols-' + difficultySettings[currentDifficulty].optionsCount;
