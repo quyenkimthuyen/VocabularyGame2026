@@ -384,12 +384,27 @@ body {
     border: 3px solid #E0E0E0;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 8px;
     cursor: pointer;
     box-shadow: 0 8px 0 #E0E0E0;
     transition: transform 0.1s;
 }
+
+.emoji-display {
+    font-size: 4rem;
+}
+
+.meaning-text {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 4px;
+    text-align: center;
+}
+
+
 
 .options-grid.cols-2 .option-card {
     font-size: 4.5rem;
