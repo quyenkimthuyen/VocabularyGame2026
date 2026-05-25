@@ -1,4 +1,99 @@
 const vocabData = {
+    MyFriends: [
+        { word: 'Friend', emoji: '👧', ipa: '🇺🇸 /frɛnd/' },
+        { word: 'Playmate', emoji: '🤝', ipa: '🇺🇸 /pleɪmeɪt/' },
+        { word: 'Classmate', emoji: '🧑‍🏫', ipa: '🇺🇸 /klæs.meɪt/' }
+    ],
+    TimeDailyRoutines: [
+        { word: 'Morning', emoji: '🌅', ipa: '🇺🇸 /ˈmɔːrnɪŋ/' },
+        { word: 'Lunch', emoji: '🥪', ipa: '🇺🇸 /lʌntʃ/' },
+        { word: 'Evening', emoji: '🌆', ipa: '🇺🇸 /ˈiːvnɪŋ/' }
+    ],
+    MyWeek: [
+        { word: 'Monday', emoji: '📅', ipa: '🇺🇸 /ˈmʌn.deɪ/' },
+        { word: 'Tuesday', emoji: '📅', ipa: '🇺🇸 /ˈtjuːz.deɪ/' },
+        { word: 'Wednesday', emoji: '📅', ipa: '🇺🇸 /ˈwenz.deɪ/' }
+    ],
+    MyBirthdayParty: [
+        { word: 'Cake', emoji: '🎂', ipa: '🇺🇸 /keɪk/' },
+        { word: 'Gift', emoji: '🎁', ipa: '🇺🇸 /ɡɪft/' },
+        { word: 'Balloon', emoji: '🎈', ipa: '🇺🇸 /bəˈluːn/' }
+    ],
+    ThingsWeCanDo: [
+        { word: 'Read', emoji: '📖', ipa: '🇺🇸 /riːd/' },
+        { word: 'Write', emoji: '✍️', ipa: '🇺🇸 /raɪt/' },
+        { word: 'Draw', emoji: '🖍️', ipa: '🇺🇸 /drɔː/' }
+    ],
+    SchoolFacilities: [
+        { word: 'Library', emoji: '📚', ipa: '🇺🇸 /ˈlaɪ.brer.i/' },
+        { word: 'Gym', emoji: '🏋️', ipa: '🇺🇸 /dʒɪm/' },
+        { word: 'Cafeteria', emoji: '🍽️', ipa: '🇺🇸 /kæf.əˈtɪə.ri.ə/' }
+    ],
+    Timetables: [
+        { word: 'Math', emoji: '➗', ipa: '🇺🇸 /mæθ/' },
+        { word: 'Science', emoji: '🔬', ipa: '🇺🇸 /ˈsaɪ.əns/' },
+        { word: 'Art', emoji: '🎨', ipa: '🇺🇸 /ɑːrt/' }
+    ],
+    MyFavouriteSubjects: [
+        { word: 'English', emoji: '🇬🇧', ipa: '🇺🇸 /ˈɪŋ.glɪʃ/' },
+        { word: 'Music', emoji: '🎵', ipa: '🇺🇸 /ˈmjuː.zɪk/' },
+        { word: 'History', emoji: '📜', ipa: '🇺🇸 /ˈhɪs.tə.ri/' }
+    ],
+    SportsDay: [
+        { word: 'Running', emoji: '🏃', ipa: '🇺🇸 /ˈrʌnɪŋ/' },
+        { word: 'Jumping', emoji: '🤾', ipa: '🇺🇸 /ˈdʒʌmpɪŋ/' },
+        { word: 'Throw', emoji: '🏈', ipa: '🇺🇸 /θroʊ/' }
+    ],
+    SummerHoliday: [
+        { word: 'Beach', emoji: '🏖️', ipa: '🇺🇸 /biːtʃ/' },
+        { word: 'Swim', emoji: '🏊', ipa: '🇺🇸 /swɪm/' },
+        { word: 'Sun', emoji: '☀️', ipa: '🇺🇸 /sʌn/' }
+    ],
+    MyHome: [
+        { word: 'Room', emoji: '🚪', ipa: '🇺🇸 /ruːm/' },
+        { word: 'Garden', emoji: '🌳', ipa: '🇺🇸 /ˈɡɑːr.dən/' },
+        { word: 'Kitchen', emoji: '🍳', ipa: '🇺🇸 /ˈkɪtʃ.ən/' }
+    ],
+    Appearance: [
+        { word: 'Hair', emoji: '💇', ipa: '🇺🇸 /hɛr/' },
+        { word: 'Eyes', emoji: '👀', ipa: '🇺🇸 /aɪz/' },
+        { word: 'Clothes', emoji: '👗', ipa: '🇺🇸 /kloʊðz/' }
+    ],
+    DailyActivities: [
+        { word: 'Brush', emoji: '🪥', ipa: '🇺🇸 /brʌʃ/' },
+        { word: 'Eat', emoji: '🍽️', ipa: '🇺🇸 /iːt/' },
+        { word: 'Sleep', emoji: '😴', ipa: '🇺🇸 /sliːp/' }
+    ],
+    FamilyWeekend: [
+        { word: 'Park', emoji: '🏞️', ipa: '🇺🇸 /pɑːrk/' },
+        { word: 'Picnic', emoji: '🧺', ipa: '🇺🇸 /ˈpɪk.nɪk/' },
+        { word: 'Game', emoji: '🎲', ipa: '🇺🇸 /ɡeɪm/' }
+    ],
+    Weather: [
+        { word: 'Rain', emoji: '🌧️', ipa: '🇺🇸 /reɪn/' },
+        { word: 'Snow', emoji: '❄️', ipa: '🇺🇸 /snoʊ/' },
+        { word: 'Wind', emoji: '💨', ipa: '🇺🇸 /wɪnd/' }
+    ],
+    InTheCity: [
+        { word: 'Bus', emoji: '🚌', ipa: '🇺🇸 /bʌs/' },
+        { word: 'Taxi', emoji: '🚕', ipa: '🇺🇸 /tæksi/' },
+        { word: 'Shop', emoji: '🏬', ipa: '🇺🇸 /ʃɑːp/' }
+    ],
+    AtTheShoppingCentre: [
+        { word: 'Store', emoji: '🛍️', ipa: '🇺🇸 /stɔːr/' },
+        { word: 'Cashier', emoji: '💰', ipa: '🇺🇸 /kæʃɪər/' },
+        { word: 'Sale', emoji: '💸', ipa: '🇺🇸 /seɪl/' }
+    ],
+    AnimalWorld: [
+        { word: 'Lion', emoji: '🦁', ipa: '🇺🇸 /ˈlaɪ.ən/' },
+        { word: 'Elephant', emoji: '🐘', ipa: '🇺🇸 /ˈel.ə.fənt/' },
+        { word: 'Monkey', emoji: '🐒', ipa: '🇺🇸 /ˈmʌŋ.ki/' }
+    ],
+    AtSummerCamp: [
+        { word: 'Tent', emoji: '⛺', ipa: '🇺🇸 /tɛnt/' },
+        { word: 'Fire', emoji: '🔥', ipa: '🇺🇸 /faɪr/' },
+        { word: 'Marshmallow', emoji: '🍢', ipa: '🇺🇸 /ˈmɑːrʃ.mæloʊ/' }
+    ],
     Animals: [
         { word: 'Cat', emoji: '🐱', ipa: '🇺🇸 /kæt/' },
         { word: 'Dog', emoji: '🐶', ipa: '🇺🇸 /dɔːɡ/' },
@@ -203,7 +298,26 @@ let categoryLives = {
     Jobs: 0,
     Vehicles: 0,
     Sports: 0,
-    Verbs: 0
+    Verbs: 0,
+    MyFriends: 0,
+    TimeDailyRoutines: 0,
+    MyWeek: 0,
+    MyBirthdayParty: 0,
+    ThingsWeCanDo: 0,
+    SchoolFacilities: 0,
+    Timetables: 0,
+    MyFavouriteSubjects: 0,
+    SportsDay: 0,
+    SummerHoliday: 0,
+    MyHome: 0,
+    Appearance: 0,
+    DailyActivities: 0,
+    FamilyWeekend: 0,
+    Weather: 0,
+    InTheCity: 0,
+    AtTheShoppingCentre: 0,
+    AnimalWorld: 0,
+    AtSummerCamp: 0
 };
 
 function setDifficulty(level) {
@@ -267,37 +381,40 @@ function showScreen(screen) {
 }
 
 function startGame(category) {
+    console.log('Starting game for category:', category);
+    if (!vocabData.hasOwnProperty(category)) {
+        console.error('Category data missing for', category);
+        alert('Sorry, data for this category is unavailable.');
+        return;
+    }
+
     currentCategory = category;
     score = 0;
     isWaitingForCorrection = false;
-    
+
     const settings = difficultySettings[currentDifficulty];
     lives = settings.lives;
     timeRemaining = settings.time;
-    
+
     remainingWords = [...vocabData[category]];
-    
+
     categoryTitle.innerText = category;
     scoreDisplay.innerText = score;
     timerDisplay.innerText = timeRemaining;
-    
-    // Reset timer bar display
+
     if (timerBar) {
         timerBar.style.width = '100%';
         timerBar.classList.remove('low-time');
     }
-    
+
     initLivesDisplay();
     showScreen(screenGame);
     nextQuestion();
-    
-    // Start Timer
+
     clearInterval(timerInterval);
     timerInterval = setInterval(() => {
         timeRemaining--;
         timerDisplay.innerText = timeRemaining;
-        
-        // Update timer bar width and state
         if (timerBar) {
             const percentage = Math.max(0, (timeRemaining / settings.time) * 100);
             timerBar.style.width = percentage + '%';
@@ -307,7 +424,6 @@ function startGame(category) {
                 timerBar.classList.remove('low-time');
             }
         }
-        
         if (timeRemaining <= 0) {
             clearInterval(timerInterval);
             updateCategoryScore();
@@ -315,6 +431,7 @@ function startGame(category) {
         }
     }, 1000);
 }
+
 
 function updateCategoryScore() {
     categoryScores[currentCategory] = Math.max(categoryScores[currentCategory], score);
@@ -396,15 +513,6 @@ function nextQuestion() {
     const ipaDisplay = document.getElementById('ipa-display');
     if (ipaDisplay) {
         ipaDisplay.innerText = currentWord.ipa || '';
-    }
-    
-    
-    
-    // Image display using placeholder service
-    const wordImg = document.getElementById('word-image');
-    if (wordImg) {
-        const encoded = encodeURIComponent(currentWord.word);
-        wordImg.src = `https://via.placeholder.com/150?text=${encoded}`;
     }
     
     optionsGrid.className = 'options-grid cols-' + difficultySettings[currentDifficulty].optionsCount;
