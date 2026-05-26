@@ -1,8 +1,14 @@
 const vocabData = {
     MyFriends: [
-        { word: 'Friend', emoji: '👧', ipa: '🇺🇸 /frɛnd/', meaning: 'Bạn bè' },
+        { word: 'Friend', emoji: '👧', ipa: '🇺🇸 /frɛnd/', meaning: 'Bạn' },
         { word: 'Playmate', emoji: '🤝', ipa: '🇺🇸 /pleɪmeɪt/', meaning: 'Bạn cùng chơi' },
-        { word: 'Classmate', emoji: '🧑‍🏫', ipa: '🇺🇸 /klæs.meɪt/', meaning: 'Bạn cùng lớp' }
+        { word: 'Classmate', emoji: '🧑‍🏫', ipa: '🇺🇸 /klæs.meɪt/', meaning: 'Bạn cùng lớp' },
+        { word: 'Kind', emoji: '🤗', ipa: '🇺🇸 /kaɪnd/', meaning: 'tốt bụng' },
+        { word: 'Helpful', emoji: '🆘', ipa: '🇺🇸 /ˈhɛlp.fəl/', meaning: 'hay giúp đỡ' },
+        { word: 'Funny', emoji: '😂', ipa: '🇺🇸 /ˈfʌni/', meaning: 'vui tính' },
+        { word: 'Clever', emoji: '🧠', ipa: '🇺🇸 /ˈklɛvər/', meaning: 'thông minh' },
+        { word: 'Tall', emoji: '📏', ipa: '🇺🇸 /tɔːl/', meaning: 'cao' },
+        { word: 'Short', emoji: '📐', ipa: '🇺🇸 /ʃɔrt/', meaning: 'thấp' }
     ],
     TimeDailyRoutines: [
         { word: 'Morning', emoji: '🌅', ipa: '🇺🇸 /ˈmɔːrnɪŋ/', meaning: 'Buổi sáng' },
@@ -207,10 +213,10 @@ const vocabData = {
         { word: 'Rainbow', emoji: '🌈', ipa: '🇺🇸 /ˈreɪn.boʊ/', meaning: 'Cầu vồng' },
         { word: 'Fog', emoji: '🌫️', ipa: '🇺🇸 /fɑːɡ/', meaning: 'Sương mù' },
         { word: 'Mist', emoji: '🌁', ipa: '🇺🇸 /mɪst/', meaning: 'Sương nhẹ' },
-        { word: 'Hail', emoji: '🧊', ipa: '🇺🇸 /heɪl/', meaning: 'Mưa đá' },
+        { word: 'Hail', emoji: '🌨️', ipa: '🇺🇸 /heɪl/', meaning: 'Mưa đá' },
         { word: 'Drizzle', emoji: '🌦️', ipa: '🇺🇸 /ˈdrɪz.əl/', meaning: 'Mưa phùn' },
-        { word: 'Typhoon', emoji: '🌀', ipa: '🇺🇸 /taɪˈfuːn/', meaning: 'Bão lớn' },
-        { word: 'Hurricane', emoji: '🌪️', ipa: '🇺🇸 /ˈhɝː.ə.keɪn/', meaning: 'Cuồng phong' },
+
+        { word: 'Hurricane', emoji: '🌊', ipa: '🇺🇸 /ˈhɝː.ə.keɪn/', meaning: 'Cuồng phong' },
         { word: 'Tornado', emoji: '🌪️', ipa: '🇺🇸 /tɔːrˈneɪ.doʊ/', meaning: 'Lốc xoáy' },
         { word: 'Hot', emoji: '🥵', ipa: '🇺🇸 /hɑːt/', meaning: 'Nóng' },
         { word: 'Cold', emoji: '🥶', ipa: '🇺🇸 /koʊld/', meaning: 'Lạnh' },
@@ -227,7 +233,7 @@ const vocabData = {
         { word: 'Sun', emoji: '☀️', ipa: '🇺🇸 /sʌn/', meaning: 'Mặt trời' },
         { word: 'Moon', emoji: '🌙', ipa: '🇺🇸 /muːn/', meaning: 'Mặt trăng' },
         { word: 'Star', emoji: '⭐', ipa: '🇺🇸 /stɑːr/', meaning: 'Ngôi sao' },
-        { word: 'Ice', emoji: '🧊', ipa: '🇺🇸 /aɪs/', meaning: 'Băng' },
+        { word: 'Ice', emoji: '⛄', ipa: '🇺🇸 /aɪs/', meaning: 'Băng' },
         { word: 'Snowflake', emoji: '❄️', ipa: '🇺🇸 /ˈsnoʊ.fleɪk/', meaning: 'Bông tuyết' },
         { word: 'Puddle', emoji: '💦', ipa: '🇺🇸 /ˈpʌd.əl/', meaning: 'Vũng nước' },
         { word: 'Umbrella', emoji: '☂️', ipa: '🇺🇸 /ʌmˈbrel.ə/', meaning: 'Cái ô' },
@@ -236,13 +242,13 @@ const vocabData = {
         { word: 'Scarf', emoji: '🧣', ipa: '🇺🇸 /skɑːrf/', meaning: 'Khăn quàng cổ' },
         { word: 'Gloves', emoji: '🧤', ipa: '🇺🇸 /ɡlʌvz/', meaning: 'Găng tay' },
         { word: 'Hat', emoji: '🧢', ipa: '🇺🇸 /hæt/', meaning: 'Mũ' },
-        { word: 'Sweater', emoji: '🧥', ipa: '🇺🇸 /ˈswet̬.ɚ/', meaning: 'Áo len' },
+        { word: 'Sweater', emoji: '🧦', ipa: '🇺🇸 /ˈswet̬.ɚ/', meaning: 'Áo len' },
         { word: 'Windy', emoji: '💨', ipa: '🇺🇸 /ˈwɪn.di/', meaning: 'Có gió' },
         { word: 'Rainy', emoji: '🌧️', ipa: '🇺🇸 /ˈreɪ.ni/', meaning: 'Có mưa' },
         { word: 'Snowy', emoji: '❄️', ipa: '🇺🇸 /ˈsnoʊ.i/', meaning: 'Có tuyết' },
         { word: 'Stormy', emoji: '⛈️', ipa: '🇺🇸 /ˈstɔːr.mi/', meaning: 'Có bão' },
         { word: 'Foggy', emoji: '🌫️', ipa: '🇺🇸 /ˈfɑː.ɡi/', meaning: 'Có sương mù' },
-        { word: 'Clear Sky', emoji: '🌤️', ipa: '🇺🇸 /klɪr skaɪ/', meaning: 'Trời quang' },
+        { word: 'Clear Sky', emoji: '🌅', ipa: '🇺🇸 /klɪr skaɪ/', meaning: 'Trời quang' },
         { word: 'Sunshine', emoji: '🌞', ipa: '🇺🇸 /ˈsʌn.ʃaɪn/', meaning: 'Ánh nắng' },
         { word: 'Breeze', emoji: '🍃', ipa: '🇺🇸 /briːz/', meaning: 'Gió nhẹ' },
         { word: 'Season', emoji: '🍂', ipa: '🇺🇸 /ˈsiː.zən/', meaning: 'Mùa' },
@@ -379,12 +385,11 @@ const vocabData = {
         { word: 'Pink', emoji: '💗', ipa: '🇺🇸 /pɪŋk/', meaning: 'Màu hồng' },
         { word: 'Black', emoji: '⬛', ipa: '🇺🇸 /blæk/', meaning: 'Màu đen' },
         { word: 'White', emoji: '⬜', ipa: '🇺🇸 /waɪt/', meaning: 'Màu trắng' },
+        { word: 'Grey', emoji: '⚪', ipa: '🇺🇸 /ɡreɪ/', meaning: 'Màu xám' },
         { word: 'Brown', emoji: '🟫', ipa: '🇺🇸 /braʊn/', meaning: 'Màu nâu' },
-        { word: 'Cyan', emoji: '🟦', ipa: '🇺🇸 /ˈsaɪ.ən/', meaning: 'Màu xanh cyan' },
-        { word: 'Magenta', emoji: '🟪', ipa: '🇺🇸 /mæˈdʒɛnta/', meaning: 'Màu đỏ tím' },
         { word: 'Gold', emoji: '🟨', ipa: '🇺🇸 /ɡoʊld/', meaning: 'Màu vàng kim' },
         { word: 'Silver', emoji: '⚪', ipa: '🇺🇸 /ˈsɪl.vər/', meaning: 'Màu bạc' },
-        { word: 'Bronze', emoji: '🟫', ipa: '🇺🇸 /brɒnz/', meaning: 'Màu đồng' },
+
     ],
 };
 
@@ -632,9 +637,19 @@ function nextQuestion() {
 
     // Clear previous options
     optionsGrid.innerHTML = '';
+    // Adjust grid columns based on difficulty
+    const colsClass = {
+      2: 'cols-2',
+      4: 'cols-4',
+      8: 'cols-8'
+    }[difficultySettings[currentDifficulty].optionsCount];
+    optionsGrid.className = `options-grid ${colsClass}`;
+
     // Render UI
     wordDisplay.innerText = currentWord.word;
-
+    // Update IPA display
+    const ipaBadge = document.getElementById('ipa-display');
+    if (ipaBadge) { ipaBadge.innerText = currentWord.ipa; }
     // Render options with emoji and meaning
     options.forEach((opt, index) => {
         const btn = document.createElement('div');
@@ -696,7 +711,13 @@ function checkAnswer(selectedOpt, btnElement) {
         btnElement.classList.add('shake');
 
         // Show the correct emoji next to the target word immediately
-        wordDisplay.innerText = currentWord.word + ' ' + currentWord.emoji;
+        // Render UI
+        wordDisplay.innerText = currentWord.word;
+        // Update IPA display
+        const ipaBadge = document.getElementById('ipa-display');
+        if (ipaBadge) {
+            ipaBadge.innerText = currentWord.ipa;
+        }
 
         // Highlight correct answer card with glowing pulse
         const allCards = optionsGrid.querySelectorAll('.option-card');

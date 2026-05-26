@@ -361,22 +361,27 @@ body {
 
 .options-grid {
     display: grid;
-    gap: 20px;
+    gap: 12px;
     flex: 1;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    max-height: 60vh;
+    overflow-y: auto;
+    /* Auto-fit columns based on available width */
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 }
 
+/* Specific column counts for difficulty levels, overriding auto-fit if needed */
 .options-grid.cols-2 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .options-grid.cols-4 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .options-grid.cols-8 {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
 }
 
 .option-card {
@@ -384,17 +389,20 @@ body {
     border: 3px solid #E0E0E0;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* stack emoji above meaning */
     align-items: center;
     justify-content: center;
     gap: 8px;
     cursor: pointer;
     box-shadow: 0 8px 0 #E0E0E0;
     transition: transform 0.1s;
+    padding: 8px;
+    min-width: 80px;
 }
 
 .emoji-display {
-    font-size: 4rem;
+    font-size: 2.5rem; /* uniform size for all emojis */
+    line-height: 1;
 }
 
 .meaning-text {
@@ -404,20 +412,16 @@ body {
     text-align: center;
 }
 
-
-
+/* Adjust option-card font sizes based on difficulty column count */
 .options-grid.cols-2 .option-card {
-    font-size: 4.5rem;
+    font-size: 2.4rem;
 }
-
 .options-grid.cols-4 .option-card {
-    font-size: 4rem;
+    font-size: 2rem;
 }
-
 .options-grid.cols-8 .option-card {
-    font-size: 2.8rem;
-    padding: 10px;
-    box-shadow: 0 6px 0 #E0E0E0;
+    font-size: 1.6rem;
+    padding: 8px;
 }
 
 .option-card:active {
