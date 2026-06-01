@@ -165,144 +165,17 @@ const vocabData = {
         { word: 'i can kick the ball in soccer', emoji: '⚽👟', ipa: '🇺🇸 /aɪ kæn kɪk ðə bɔːl ɪn ˈsɑː.kɚ/', meaning: 'Mình có thể đá bóng trong môn bóng đá' },
         { word: "I can't kick the ball in Basketball", emoji: '🏀❌', ipa: '🇺🇸 /aɪ kænt kɪk ðə bɔːl ɪn ˈbæs.kət.bɑːl/', meaning: 'Mình không được đá bóng trong môn bóng rổ' }
     ],
-    Timetables: [
-        { word: 'Math', emoji: '➗', ipa: '🇺🇸 /mæθ/', meaning: 'Môn toán' },
-        { word: 'Science', emoji: '🔬', ipa: '🇺🇸 /ˈsaɪ.əns/', meaning: 'Khoa học' },
-        { word: 'Art', emoji: '🎨', ipa: '🇺🇸 /ɑːrt/', meaning: 'Mỹ thuật' }
-    ],
-    MyFavouriteSubjects: [
-        { word: 'English', emoji: '🇬🇧', ipa: '🇺🇸 /ˈɪŋ.glɪʃ/', meaning: 'Tiếng Anh' },
-        { word: 'Music', emoji: '🎵', ipa: '🇺🇸 /ˈmjuː.zɪk/', meaning: 'Âm nhạc' },
-        { word: 'History', emoji: '📜', ipa: '🇺🇸 /ˈhɪs.tə.ri/', meaning: 'Lịch sử' }
-    ],
-    SportsDay: [
-        { word: 'Running', emoji: '🏃', ipa: '🇺🇸 /ˈrʌnɪŋ/', meaning: 'Chạy bộ' },
-        { word: 'Jumping', emoji: '🤾', ipa: '🇺🇸 /ˈdʒʌmpɪŋ/', meaning: 'Nhảy' },
-        { word: 'Throw', emoji: '🏈', ipa: '🇺🇸 /θroʊ/', meaning: 'Ném' }
-    ],
-    SummerHoliday: [
-        { word: 'Beach', emoji: '🏖️', ipa: '🇺🇸 /biːtʃ/', meaning: 'Bãi biển' },
-        { word: 'Swim', emoji: '🏊', ipa: '🇺🇸 /swɪm/', meaning: 'Bơi' },
-        { word: 'Sun', emoji: '☀️', ipa: '🇺🇸 /sʌn/', meaning: 'Mặt trời' }
-    ],
-    MyHome: [
-        { word: 'Room', emoji: '🚪', ipa: '🇺🇸 /ruːm/', meaning: 'Căn phòng' },
-        { word: 'Garden', emoji: '🌳', ipa: '🇺🇸 /ˈɡɑːr.dən/', meaning: 'Khu vườn' },
-        { word: 'Kitchen', emoji: '🍳', ipa: '🇺🇸 /ˈkɪtʃ.ən/', meaning: 'Nhà bếp' }
-    ],
-    Appearance: [
-        { word: 'Hair', emoji: '💇', ipa: '🇺🇸 /hɛr/', meaning: 'Tóc' },
-        { word: 'Eyes', emoji: '👀', ipa: '🇺🇸 /aɪz/', meaning: 'Đôi mắt' },
-        { word: 'Clothes', emoji: '👗', ipa: '🇺🇸 /kloʊðz/', meaning: 'Quần áo' }
-    ],
-    DailyActivities: [
-        { word: 'Brush', emoji: '🪥', ipa: '🇺🇸 /brʌʃ/', meaning: 'Chải' },
-        { word: 'Eat', emoji: '🍽️', ipa: '🇺🇸 /iːt/', meaning: 'Ăn' },
-        { word: 'Sleep', emoji: '😴', ipa: '🇺🇸 /sliːp/', meaning: 'Ngủ' }
-    ],
-    FamilyWeekend: [
-        { word: 'Park', emoji: '🏞️', ipa: '🇺🇸 /pɑːrk/', meaning: 'Công viên' },
-        { word: 'Picnic', emoji: '🧺', ipa: '🇺🇸 /ˈpɪk.nɪk/', meaning: 'Buổi dã ngoại' },
-        { word: 'Game', emoji: '🎲', ipa: '🇺🇸 /ɡeɪm/', meaning: 'Trò chơi' }
-    ],
-
-    Weather: [
-        { word: 'Rain', emoji: '🌧️', ipa: '🇺🇸 /reɪn/', meaning: 'Mưa' },
-        { word: 'Snow', emoji: '❄️', ipa: '🇺🇸 /snoʊ/', meaning: 'Tuyết' },
-        { word: 'Wind', emoji: '💨', ipa: '🇺🇸 /wɪnd/', meaning: 'Gió' },
-        { word: 'Sunny', emoji: '☀️', ipa: '🇺🇸 /ˈsʌn.i/', meaning: 'Có nắng' },
-        { word: 'Cloudy', emoji: '☁️', ipa: '🇺🇸 /ˈklaʊ.di/', meaning: 'Nhiều mây' },
-        { word: 'Storm', emoji: '⛈️', ipa: '🇺🇸 /stɔːrm/', meaning: 'Bão' },
-        { word: 'Thunder', emoji: '⚡', ipa: '🇺🇸 /ˈθʌn.dɚ/', meaning: 'Sấm' },
-        { word: 'Lightning', emoji: '🌩️', ipa: '🇺🇸 /ˈlaɪt.nɪŋ/', meaning: 'Tia chớp' },
-        { word: 'Rainbow', emoji: '🌈', ipa: '🇺🇸 /ˈreɪn.boʊ/', meaning: 'Cầu vồng' },
-        { word: 'Fog', emoji: '🌫️', ipa: '🇺🇸 /fɑːɡ/', meaning: 'Sương mù' },
-        { word: 'Mist', emoji: '🌁', ipa: '🇺🇸 /mɪst/', meaning: 'Sương nhẹ' },
-        { word: 'Hail', emoji: '🌨️', ipa: '🇺🇸 /heɪl/', meaning: 'Mưa đá' },
-        { word: 'Drizzle', emoji: '🌦️', ipa: '🇺🇸 /ˈdrɪz.əl/', meaning: 'Mưa phùn' },
-
-        { word: 'Hurricane', emoji: '🌊', ipa: '🇺🇸 /ˈhɝː.ə.keɪn/', meaning: 'Cuồng phong' },
-        { word: 'Tornado', emoji: '🌪️', ipa: '🇺🇸 /tɔːrˈneɪ.doʊ/', meaning: 'Lốc xoáy' },
-        { word: 'Hot', emoji: '🥵', ipa: '🇺🇸 /hɑːt/', meaning: 'Nóng' },
-        { word: 'Cold', emoji: '🥶', ipa: '🇺🇸 /koʊld/', meaning: 'Lạnh' },
-        { word: 'Warm', emoji: '🌤️', ipa: '🇺🇸 /wɔːrm/', meaning: 'Ấm áp' },
-        { word: 'Cool', emoji: '😎', ipa: '🇺🇸 /kuːl/', meaning: 'Mát mẻ' },
-        { word: 'Wet', emoji: '💧', ipa: '🇺🇸 /wet/', meaning: 'Ướt' },
-        { word: 'Dry', emoji: '🏜️', ipa: '🇺🇸 /draɪ/', meaning: 'Khô' },
-        { word: 'Humid', emoji: '💦', ipa: '🇺🇸 /ˈhjuː.mɪd/', meaning: 'Ẩm ướt' },
-        { word: 'Freezing', emoji: '🧊', ipa: '🇺🇸 /ˈfriː.zɪŋ/', meaning: 'Đóng băng' },
-        { word: 'Weather', emoji: '🌍', ipa: '🇺🇸 /ˈweð.ɚ/', meaning: 'Thời tiết' },
-        { word: 'Temperature', emoji: '🌡️', ipa: '🇺🇸 /ˈtem.prə.tʃɚ/', meaning: 'Nhiệt độ' },
-        { word: 'Forecast', emoji: '📡', ipa: '🇺🇸 /ˈfɔːr.kæst/', meaning: 'Dự báo thời tiết' },
-        { word: 'Sky', emoji: '🌌', ipa: '🇺🇸 /skaɪ/', meaning: 'Bầu trời' },
-        { word: 'Sun', emoji: '☀️', ipa: '🇺🇸 /sʌn/', meaning: 'Mặt trời' },
-        { word: 'Moon', emoji: '🌙', ipa: '🇺🇸 /muːn/', meaning: 'Mặt trăng' },
-        { word: 'Star', emoji: '⭐', ipa: '🇺🇸 /stɑːr/', meaning: 'Ngôi sao' },
-        { word: 'Ice', emoji: '⛄', ipa: '🇺🇸 /aɪs/', meaning: 'Băng' },
-        { word: 'Snowflake', emoji: '❄️', ipa: '🇺🇸 /ˈsnoʊ.fleɪk/', meaning: 'Bông tuyết' },
-        { word: 'Puddle', emoji: '💦', ipa: '🇺🇸 /ˈpʌd.əl/', meaning: 'Vũng nước' },
-        { word: 'Umbrella', emoji: '☂️', ipa: '🇺🇸 /ʌmˈbrel.ə/', meaning: 'Cái ô' },
-        { word: 'Raincoat', emoji: '🧥', ipa: '🇺🇸 /ˈreɪn.koʊt/', meaning: 'Áo mưa' },
-        { word: 'Boots', emoji: '🥾', ipa: '🇺🇸 /buːts/', meaning: 'Ủng' },
-        { word: 'Scarf', emoji: '🧣', ipa: '🇺🇸 /skɑːrf/', meaning: 'Khăn quàng cổ' },
-        { word: 'Gloves', emoji: '🧤', ipa: '🇺🇸 /ɡlʌvz/', meaning: 'Găng tay' },
-        { word: 'Hat', emoji: '🧢', ipa: '🇺🇸 /hæt/', meaning: 'Mũ' },
-        { word: 'Sweater', emoji: '🧦', ipa: '🇺🇸 /ˈswet̬.ɚ/', meaning: 'Áo len' },
-        { word: 'Windy', emoji: '💨', ipa: '🇺🇸 /ˈwɪn.di/', meaning: 'Có gió' },
-        { word: 'Rainy', emoji: '🌧️', ipa: '🇺🇸 /ˈreɪ.ni/', meaning: 'Có mưa' },
-        { word: 'Snowy', emoji: '❄️', ipa: '🇺🇸 /ˈsnoʊ.i/', meaning: 'Có tuyết' },
-        { word: 'Stormy', emoji: '⛈️', ipa: '🇺🇸 /ˈstɔːr.mi/', meaning: 'Có bão' },
-        { word: 'Foggy', emoji: '🌫️', ipa: '🇺🇸 /ˈfɑː.ɡi/', meaning: 'Có sương mù' },
-        { word: 'Clear Sky', emoji: '🌅', ipa: '🇺🇸 /klɪr skaɪ/', meaning: 'Trời quang' },
-        { word: 'Sunshine', emoji: '🌞', ipa: '🇺🇸 /ˈsʌn.ʃaɪn/', meaning: 'Ánh nắng' },
-        { word: 'Breeze', emoji: '🍃', ipa: '🇺🇸 /briːz/', meaning: 'Gió nhẹ' },
-        { word: 'Season', emoji: '🍂', ipa: '🇺🇸 /ˈsiː.zən/', meaning: 'Mùa' },
-        { word: 'Spring', emoji: '🌸', ipa: '🇺🇸 /sprɪŋ/', meaning: 'Mùa xuân' },
-        { word: 'Summer', emoji: '🏖️', ipa: '🇺🇸 /ˈsʌm.ɚ/', meaning: 'Mùa hè' },
-        { word: 'Autumn', emoji: '🍁', ipa: '🇺🇸 /ˈɔː.təm/', meaning: 'Mùa thu' },
-        { word: 'Winter', emoji: '⛄', ipa: '🇺🇸 /ˈwɪn.t̬ɚ/', meaning: 'Mùa đông' },
-    ],
-
-    InTheCity: [
-        { word: 'Bus', emoji: '🚌', ipa: '🇺🇸 /bʌs/', meaning: 'Xe buýt' },
-        { word: 'Taxi', emoji: '🚕', ipa: '🇺🇸 /tæksi/', meaning: 'Taxi' },
-        { word: 'Shop', emoji: '🏬', ipa: '🇺🇸 /ʃɑːp/', meaning: 'Cửa hàng' }
-    ],
-
-    AtTheShoppingCentre: [
-        { word: 'Store', emoji: '🛍️', ipa: '🇺🇸 /stɔːr/', meaning: 'Cửa hàng' },
-        { word: 'Cashier', emoji: '💰', ipa: '🇺🇸 /kæʃɪər/', meaning: 'Thu ngân' },
-        { word: 'Sale', emoji: '💸', ipa: '🇺🇸 /seɪl/', meaning: 'Giảm giá' }
-    ],
-
-    AnimalWorld: [
-        { word: 'Lion', emoji: '🦁', ipa: '🇺🇸 /ˈlaɪ.ən/', meaning: 'Sư tử' },
-        { word: 'Elephant', emoji: '🐘', ipa: '🇺🇸 /ˈel.ə.fənt/', meaning: 'Con voi' },
-        { word: 'Monkey', emoji: '🐒', ipa: '🇺🇸 /ˈmʌŋ.ki/', meaning: 'Con khỉ' }
-    ],
-
-    AtSummerCamp: [
-        { word: 'Tent', emoji: '⛺', ipa: '🇺🇸 /tɛnt/', meaning: 'Lều' },
-        { word: 'Fire', emoji: '🔥', ipa: '🇺🇸 /faɪr/', meaning: 'Lửa' },
-        { word: 'Marshmallow', emoji: '🍢', ipa: '🇺🇸 /ˈmɑːrʃ.mæloʊ/', meaning: 'Kẹo dẻo marshmallow' }
-    ],
-
-    Animals: [
-        { word: 'Cat', emoji: '🐱', ipa: '🇺🇸 /kæt/', meaning: 'Mèo' },
-        { word: 'Dog', emoji: '🐶', ipa: '🇺🇸 /dɔːɡ/', meaning: 'Chó' },
-        { word: 'Elephant', emoji: '🐘', ipa: '🇺🇸 /ˈel.ə.fənt/', meaning: 'Con voi' },
-        { word: 'Lion', emoji: '🦁', ipa: '🇺🇸 /ˈlaɪ.ən/', meaning: 'Sư tử' },
-        { word: 'Monkey', emoji: '🐒', ipa: '🇺🇸 /ˈmʌŋ.ki/', meaning: 'Con khỉ' },
-        { word: 'Penguin', emoji: '🐧', ipa: '🇺🇸 /ˈpeŋ.ɡwɪn/', meaning: 'Chim cánh cụt' },
-        { word: 'Giraffe', emoji: '🦒', ipa: '🇺🇸 /dʒɪˈræf/', meaning: 'Hươu cao cổ' },
-        { word: 'Rabbit', emoji: '🐰', ipa: '🇺🇸 /ˈræb.ɪt/', meaning: 'Con thỏ' },
-        { word: 'Tiger', emoji: '🐯', ipa: '🇺🇸 /ˈtaɪ.ɡɚ/', meaning: 'Con hổ' },
-        { word: 'Panda', emoji: '🐼', ipa: '🇺🇸 /ˈpæn.də/', meaning: 'Gấu trúc' },
-        { word: 'Kangaroo', emoji: '🦘', ipa: '🇺🇸 /kæŋɡəruː/', meaning: 'Chuột túi' },
-        { word: 'Zebra', emoji: '🦓', ipa: '🇺🇸 /ˈzibrə/', meaning: 'Ngựa vằn' },
-        { word: 'Hippo', emoji: '🦛', ipa: '🇺🇸 /ˈhɪpoʊ/', meaning: 'Hà mã' },
-        { word: 'Crocodile', emoji: '🐊', ipa: '🇺🇸 /ˈkrɒk.ə.daɪl/', meaning: 'Cá sấu' },
-        { word: 'Dolphin', emoji: '🐬', ipa: '🇺🇸 /ˈdɒlfɪn/', meaning: 'Cá heo' }
+    Clothes: [
+        { word: 'dress', emoji: '👗', ipa: '🇺🇸 /dres/', meaning: 'váy liền' },
+        { word: 'shirt', emoji: '👕', ipa: '🇺🇸 /ʃɝːt/', meaning: 'áo sơ mi' },
+        { word: 'shorts', emoji: '🩳', ipa: '🇺🇸 /ʃɔːrts/', meaning: 'quần đùi' },
+        { word: 'socks', emoji: '🧦', ipa: '🇺🇸 /sɑːks/', meaning: 'đôi tất' },
+        { word: 'pants', emoji: '👖', ipa: '🇺🇸 /pænts/', meaning: 'quần dài' },
+        { word: 'skirt', emoji: '👗', ipa: '🇺🇸 /skɝːt/', meaning: 'chân váy' },
+        { word: 'jacket', emoji: '🧥', ipa: '🇺🇸 /ˈdʒæk.ɪt/', meaning: 'áo khoác' },
+        { word: 'jeans', emoji: '👖', ipa: '🇺🇸 /dʒiːnz/', meaning: 'quần jean' },
+        { word: 'boots', emoji: '🥾', ipa: '🇺🇸 /buːts/', meaning: 'đôi ủng' },
+        { word: 'T-shirt', emoji: '👕', ipa: '🇺🇸 /ˈtiː.ʃɝːt/', meaning: 'áo thun' }
     ],
 
     Fruits: [
@@ -423,32 +296,15 @@ const difficultySettings = {
 };
 
 let categoryLives = {
-    Animals: 0,
     Fruits: 0,
     Colors: 0,
-    Food: 0,
     School: 0,
-    Jobs: 0,
-    Vehicles: 0,
-    Sports: 0,
     Verbs: 0,
     MyFriends: 0,
     Family: 0,
     Home: 0,
     SportHobbies: 0,
-    Timetables: 0,
-    MyFavouriteSubjects: 0,
-    SportsDay: 0,
-    SummerHoliday: 0,
-    MyHome: 0,
-    Appearance: 0,
-    DailyActivities: 0,
-    FamilyWeekend: 0,
-    Weather: 0,
-    InTheCity: 0,
-    AtTheShoppingCentre: 0,
-    AnimalWorld: 0,
-    AtSummerCamp: 0
+    Clothes: 0
 };
 
 function setDifficulty(level) {
@@ -482,32 +338,15 @@ let remainingWords = [];
 let isWaitingForCorrection = false;
 let isPaused = false;
 let categoryScores = {
-    Animals: 0,
     Fruits: 0,
     Colors: 0,
-    Food: 0,
     School: 0,
-    Jobs: 0,
-    Vehicles: 0,
-    Sports: 0,
     Verbs: 0,
     MyFriends: 0,
     Family: 0,
     Home: 0,
     SportHobbies: 0,
-    Timetables: 0,
-    MyFavouriteSubjects: 0,
-    SportsDay: 0,
-    SummerHoliday: 0,
-    MyHome: 0,
-    Appearance: 0,
-    DailyActivities: 0,
-    FamilyWeekend: 0,
-    Weather: 0,
-    InTheCity: 0,
-    AtTheShoppingCentre: 0,
-    AnimalWorld: 0,
-    AtSummerCamp: 0
+    Clothes: 0
 };
 
 // DOM Elements
