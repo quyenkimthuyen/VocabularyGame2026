@@ -69,6 +69,17 @@ body {
     margin-bottom: 3vh;
 }
 
+.category-btn .label {
+    color: #fff; /* white text for contrast */
+    text-shadow: 0 0 3px rgba(0,0,0,0.6);
+    font-weight: 600;
+}
+
+.category-btn .emoji {
+    color: #fff; /* ensure emoji stands out on dark backgrounds */
+    text-shadow: 0 0 3px rgba(0,0,0,0.6);
+}
+
 /* Difficulty Selector */
 .difficulty-selector {
     display: flex;
@@ -403,6 +414,12 @@ body {
 .emoji-display {
     font-size: 2.5rem; /* uniform size for all emojis */
     line-height: 1;
+}
+
+.flag-img {
+    width: 24px;
+    height: auto;
+    margin: 4px 0;
 }
 
 .meaning-text {

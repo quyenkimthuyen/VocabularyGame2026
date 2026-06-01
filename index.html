@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,13 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Main App Container -->
     <div id="app">
         <!-- Home Screen -->
         <div id="screen-home" class="screen active">
             <h1 class="bounce-loop text-white">Vocab Fun!</h1>
-            
+
             <!-- Difficulty Selector -->
             <div class="difficulty-selector">
                 <div class="difficulty-toggle">
@@ -24,189 +26,148 @@
             </div>
 
             <div class="category-grid">
-    <button class="category-btn" style="background:#ffadad" onclick="startGame('MyFriends')">
-        <div class="emoji">👧👦</div>
-        <div class="label">My friends</div>
-        <div class="category-score">⭐ <span id="score-MyFriends">0</span></div>
-        <div class="category-lives" id="lives-MyFriends"></div>
-    </button>
-    <button class="category-btn" style="background:#ffd6a5" onclick="startGame('TimeDailyRoutines')">
-        <div class="emoji">⏰📅</div>
-        <div class="label">Time and daily routines</div>
-        <div class="category-score">⭐ <span id="score-TimeDailyRoutines">0</span></div>
-        <div class="category-lives" id="lives-TimeDailyRoutines"></div>
-    </button>
-    <button class="category-btn" style="background:#fdffb6" onclick="startGame('MyWeek')">
-        <div class="emoji">📆🗓️</div>
-        <div class="label">My week</div>
-        <div class="category-score">⭐ <span id="score-MyWeek">0</span></div>
-        <div class="category-lives" id="lives-MyWeek"></div>
-    </button>
-    <button class="category-btn" style="background:#caffbf" onclick="startGame('MyBirthdayParty')">
-        <div class="emoji">🎂🥳</div>
-        <div class="label">My birthday party</div>
-        <div class="category-score">⭐ <span id="score-MyBirthdayParty">0</span></div>
-        <div class="category-lives" id="lives-MyBirthdayParty"></div>
-    </button>
-    <button class="category-btn" style="background:#9bf6ff" onclick="startGame('ThingsWeCanDo')">
-        <div class="emoji">✅💡</div>
-        <div class="label">Things we can do</div>
-        <div class="category-score">⭐ <span id="score-ThingsWeCanDo">0</span></div>
-        <div class="category-lives" id="lives-ThingsWeCanDo"></div>
-    </button>
-    <button class="category-btn" style="background:#a0c4ff" onclick="startGame('SchoolFacilities')">
-        <div class="emoji">🏫🏢</div>
-        <div class="label">Our school facilities</div>
-        <div class="category-score">⭐ <span id="score-SchoolFacilities">0</span></div>
-        <div class="category-lives" id="lives-SchoolFacilities"></div>
-    </button>
-    <button class="category-btn" style="background:#bdb2ff" onclick="startGame('Timetables')">
-        <div class="emoji">📋🕒</div>
-        <div class="label">Our timetables</div>
-        <div class="category-score">⭐ <span id="score-Timetables">0</span></div>
-        <div class="category-lives" id="lives-Timetables"></div>
-    </button>
-    <button class="category-btn" style="background:#ffc6ff" onclick="startGame('MyFavouriteSubjects')">
-        <div class="emoji">📚❤️</div>
-        <div class="label">My favourite subjects</div>
-        <div class="category-score">⭐ <span id="score-MyFavouriteSubjects">0</span></div>
-        <div class="category-lives" id="lives-MyFavouriteSubjects"></div>
-    </button>
-    <button class="category-btn" style="background:#fffffc" onclick="startGame('SportsDay')">
-        <div class="emoji">🏅⚽</div>
-        <div class="label">Our sports day</div>
-        <div class="category-score">⭐ <span id="score-SportsDay">0</span></div>
-        <div class="category-lives" id="lives-SportsDay"></div>
-    </button>
-    <button class="category-btn" style="background:#ffdfd0" onclick="startGame('SummerHoliday')">
-        <div class="emoji">🏖️☀️</div>
-        <div class="label">Our summer holiday</div>
-        <div class="category-score">⭐ <span id="score-SummerHoliday">0</span></div>
-        <div class="category-lives" id="lives-SummerHoliday"></div>
-    </button>
-    <button class="category-btn" style="background:#ff6b6b" onclick="startGame('MyHome')">
-        <div class="emoji">🏠👪</div>
-        <div class="label">My home</div>
-        <div class="category-score">⭐ <span id="score-MyHome">0</span></div>
-        <div class="category-lives" id="lives-MyHome"></div>
-    </button>
-    <button class="category-btn" style="background:#f06543" onclick="startGame('Jobs')">
-        <div class="emoji">💼👩‍⚕️</div>
-        <div class="label">Jobs</div>
-        <div class="category-score">⭐ <span id="score-Jobs">0</span></div>
-        <div class="category-lives" id="lives-Jobs"></div>
-    </button>
-    <button class="category-btn" style="background:#ffb96c" onclick="startGame('Appearance')">
-        <div class="emoji">👗👔</div>
-        <div class="label">Appearance</div>
-        <div class="category-score">⭐ <span id="score-Appearance">0</span></div>
-        <div class="category-lives" id="lives-Appearance"></div>
-    </button>
-    <button class="category-btn" style="background:#d4a373" onclick="startGame('DailyActivities')">
-        <div class="emoji">🛁🚿</div>
-        <div class="label">Daily activities</div>
-        <div class="category-score">⭐ <span id="score-DailyActivities">0</span></div>
-        <div class="category-lives" id="lives-DailyActivities"></div>
-    </button>
-    <button class="category-btn" style="background:#b9c2c9" onclick="startGame('FamilyWeekend')">
-        <div class="emoji">👨‍👩‍👧‍👦🏞️</div>
-        <div class="label">My family's weekend</div>
-        <div class="category-score">⭐ <span id="score-FamilyWeekend">0</span></div>
-        <div class="category-lives" id="lives-FamilyWeekend"></div>
-    </button>
-    <button class="category-btn" style="background:#547e77" onclick="startGame('Weather')">
-        <div class="emoji">☀️🌧️</div>
-        <div class="label">Weather</div>
-        <div class="category-score">⭐ <span id="score-Weather">0</span></div>
-        <div class="category-lives" id="lives-Weather"></div>
-    </button>
-    <button class="category-btn" style="background:#799eb0" onclick="startGame('InTheCity')">
-        <div class="emoji">🏙️🚦</div>
-        <div class="label">In the city</div>
-        <div class="category-score">⭐ <span id="score-InTheCity">0</span></div>
-        <div class="category-lives" id="lives-InTheCity"></div>
-    </button>
-    <button class="category-btn" style="background:#ac3944" onclick="startGame('AtTheShoppingCentre')">
-        <div class="emoji">🛍️🏬</div>
-        <div class="label">At the shopping centre</div>
-        <div class="category-score">⭐ <span id="score-AtTheShoppingCentre">0</span></div>
-        <div class="category-lives" id="lives-AtTheShoppingCentre"></div>
-    </button>
-    <button class="category-btn" style="background:#ecb822" onclick="startGame('AnimalWorld')">
-        <div class="emoji">🦁🐵</div>
-        <div class="label">The animal world</div>
-        <div class="category-score">⭐ <span id="score-AnimalWorld">0</span></div>
-        <div class="category-lives" id="lives-AnimalWorld"></div>
-    </button>
-    <button class="category-btn" style="background:#ff9a9e" onclick="startGame('AtSummerCamp')">
-        <div class="emoji">🏕️🔥</div>
-        <div class="label">At summer camp</div>
-        <div class="category-score">⭐ <span id="score-AtSummerCamp">0</span></div>
-        <div class="category-lives" id="lives-AtSummerCamp"></div>
-    </button>
-</div>
+                <button class="category-btn" style="background:#ffe4e1" onclick="startGame('Hello')">
+                    <div class="emoji">👋</div>
+                    <div class="label">Hello</div>
+                    <div class="category-score">⭐ <span id="score-Hello">0</span></div>
+                    <div class="category-lives" id="lives-Hello"></div>
+                </button>
+                <button class="category-btn" style="background:#fdffb6" onclick="startGame('MyWeek')">
+                    <div class="emoji">📆🗓️</div>
+                    <div class="label">My Week</div>
+                    <div class="category-score">⭐ <span id="score-MyWeek">0</span></div>
+                    <div class="category-lives" id="lives-MyWeek"></div>
+                </button>
+                <button class="category-btn" style="background:#caffbf" onclick="startGame('Home')">
+                    <div class="emoji">🏠</div>
+                    <div class="label">Home</div>
+                    <div class="category-score">⭐ <span id="score-Home">0</span></div>
+                    <div class="category-lives" id="lives-Home"></div>
+                </button>
+                <button class="category-btn" style="background:#ffdd99" onclick="startGame('MyFace')">
+                    <div class="emoji">👦</div>
+                    <div class="label">My Face</div>
+                    <div class="category-score">⭐ <span id="score-MyFace">0</span></div>
+                    <div class="category-lives" id="lives-MyFace"></div>
+                </button>
+                <button class="category-btn" style="background:#ffb6c1" onclick="startGame('Colors')">
+                    <div class="emoji">🎨</div>
+                    <div class="label">Color</div>
+                    <div class="category-score">⭐ <span id="score-Colors">0</span></div>
+                    <div class="category-lives" id="lives-Colors"></div>
+                </button>
+                <button class="category-btn" style="background:#a8dadc" onclick="startGame('MyFriends')">
+                    <div class="emoji">🧑‍🤝‍🧑</div>
+                    <div class="label">My Friends</div>
+                    <div class="category-score">⭐ <span id="score-MyFriends">0</span></div>
+                    <div class="category-lives" id="lives-MyFriends"></div>
+                </button>
+                <button class="category-btn" style="background:#ffcad4" onclick="startGame('Family')">
+                    <div class="emoji">👨‍👩‍👧‍👦</div>
+                    <div class="label">Family</div>
+                    <div class="category-score">⭐ <span id="score-Family">0</span></div>
+                    <div class="category-lives" id="lives-Family"></div>
+                </button>
+                <button class="category-btn" style="background:#d8e2dc" onclick="startGame('School')">
+                    <div class="emoji">🏫</div>
+                    <div class="label">School</div>
+                    <div class="category-score">⭐ <span id="score-School">0</span></div>
+                    <div class="category-lives" id="lives-School"></div>
+                </button>
+                <button class="category-btn" style="background:#b5e2fa" onclick="startGame('Sports')">
+                    <div class="emoji">⚽</div>
+                    <div class="label">Sports</div>
+                    <div class="category-score">⭐ <span id="score-Sports">0</span></div>
+                    <div class="category-lives" id="lives-Sports"></div>
+                </button>
+                <button class="category-btn" style="background:#f7d1cd" onclick="startGame('Hobbies')">
+                    <div class="emoji">🎨</div>
+                    <div class="label">Hobbies</div>
+                    <div class="category-score">⭐ <span id="score-Hobbies">0</span></div>
+                    <div class="category-lives" id="lives-Hobbies"></div>
+                </button>
+                <button class="category-btn" style="background:#e8c1a0" onclick="startGame('Clothes')">
+                    <div class="emoji">👕</div>
+                    <div class="label">Clothes</div>
+                    <div class="category-score">⭐ <span id="score-Clothes">0</span></div>
+                    <div class="category-lives" id="lives-Clothes"></div>
+                </button>
+                <button class="category-btn" style="background:#c1f0fb" onclick="startGame('Toys')">
+                    <div class="emoji">🧸</div>
+                    <div class="label">Toys</div>
+                    <div class="category-score">⭐ <span id="score-Toys">0</span></div>
+                    <div class="category-lives" id="lives-Toys"></div>
+                </button>
+                <button class="category-btn" style="background:#e2ece9" onclick="startGame('Food')">
+                    <div class="emoji">🍚</div>
+                    <div class="label">Food</div>
+                    <div class="category-score">⭐ <span id="score-Food">0</span></div>
+                    <div class="category-lives" id="lives-Food"></div>
+                </button>
+            </div>
         </div>
 
         <!-- Game Screen -->
         <div id="screen-game" class="screen">
-            <div class="header">
-                <div class="header-left">
-                    <button class="btn-home" onclick="goHome()" title="Go Home">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                        </svg>
-                    </button>
-                    <div class="category-title" id="game-category-title">Category</div>
+                    <div class="header">
+                        <div class="header-left">
+                            <button class="btn-home" onclick="goHome()" title="Go Home">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                                </svg>
+                            </button>
+                            <div class="category-title" id="game-category-title">Category</div>
+                        </div>
+                        <div class="timer-box" id="timer-box">
+                            ⏱️ <span id="timer-display">60</span>
+                        </div>
+                        <div class="score-box">
+                            ⭐ <span id="score-display">0</span>
+                        </div>
+                    </div>
+
+                    <div class="timer-bar-container">
+                        <div class="timer-bar" id="timer-bar"></div>
+                    </div>
+
+                    <div class="lives-container" id="lives-container">
+                        <!-- Hearts will be dynamically injected based on difficulty -->
+                    </div>
+
+                    <div class="question-container">
+                        <div class="word-info">
+                            <h1 id="word-display">Word</h1>
+                            <div id="ipa-display" class="ipa-badge" onclick="playAudio()">🇺🇸 /wɜːrd/</div>
+
+
+                        </div>
+
+                        <button class="btn-audio" onclick="playAudio()">🔊</button>
+                    </div>
+
+                    <div class="options-grid" id="options-grid">
+                        <!-- Options will be injected here -->
+                    </div>
                 </div>
-                <div class="timer-box" id="timer-box">
-                    ⏱️ <span id="timer-display">60</span>
+
+                <!-- Game Over Screen -->
+                <div id="screen-game-over" class="screen">
+                    <h1 class="text-white bounce-loop" style="margin-top: 5vh;" id="game-over-title">Game Over!</h1>
+                    <div class="final-score-box">
+                        <h2 id="final-score-label">Your Score</h2>
+                        <h1 id="final-score">0</h1>
+                    </div>
+                    <button class="btn-primary" onclick="restartGame()">Play Again</button>
+                    <button class="btn-secondary" onclick="goHome()">Go Home</button>
                 </div>
-                <div class="score-box">
-                    ⭐ <span id="score-display">0</span>
+
+                <!-- Reward Overlay -->
+                <div id="reward-overlay">
+                    <div class="star-animation">🌟</div>
                 </div>
             </div>
 
-            <div class="timer-bar-container">
-                <div class="timer-bar" id="timer-bar"></div>
-            </div>
-            
-            <div class="lives-container" id="lives-container">
-                <!-- Hearts will be dynamically injected based on difficulty -->
-            </div>
-
-            <div class="question-container">
-                <div class="word-info">
-                    <h1 id="word-display">Word</h1>
-                    <div id="ipa-display" class="ipa-badge" onclick="playAudio()">🇺🇸 /wɜːrd/</div>
-
-                
-                </div>
-                
-                <button class="btn-audio" onclick="playAudio()">🔊</button>
-            </div>
-
-            <div class="options-grid" id="options-grid">
-                <!-- Options will be injected here -->
-            </div>
-        </div>
-
-        <!-- Game Over Screen -->
-        <div id="screen-game-over" class="screen">
-            <h1 class="text-white bounce-loop" style="margin-top: 5vh;" id="game-over-title">Game Over!</h1>
-            <div class="final-score-box">
-                <h2 id="final-score-label">Your Score</h2>
-                <h1 id="final-score">0</h1>
-            </div>
-            <button class="btn-primary" onclick="restartGame()">Play Again</button>
-            <button class="btn-secondary" onclick="goHome()">Go Home</button>
-        </div>
-
-        <!-- Reward Overlay -->
-        <div id="reward-overlay">
-            <div class="star-animation">🌟</div>
-        </div>
-    </div>
-
-    <script src="game.js"></script>
+            <script src="game.js"></script>
 </body>
+
 </html>
