@@ -1,0 +1,11 @@
+{
+  "name": "Vocabulary Boost - TOEIC & IELTS",
+  "short_name": "Vocab Boost",
+  "description": "Ứng dụng học từ vựng TOEIC và IELTS với bài test trình độ tiếng Anh.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": []
+}
