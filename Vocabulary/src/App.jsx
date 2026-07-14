@@ -536,6 +536,411 @@ const efSetSections = [
   },
 ];
 
+const extraReadingTasks = [
+  {
+    title: 'Grammar: Workplace Basics',
+    passage: 'Choose the best answer for each workplace sentence.',
+    questions: [
+      {
+        id: 'r21',
+        prompt: 'The new printer _____ installed tomorrow morning.',
+        options: ['will be', 'will', 'is been', 'has'],
+        answer: 'will be',
+      },
+      {
+        id: 'r22',
+        prompt: 'There _____ several documents on the desk.',
+        options: ['is', 'are', 'be', 'was'],
+        answer: 'are',
+      },
+      {
+        id: 'r23',
+        prompt: 'Mr. Kim works _____ the accounting department.',
+        options: ['on', 'at', 'in', 'by'],
+        answer: 'in',
+      },
+      {
+        id: 'r24',
+        prompt: 'The presentation was _____ than the last one.',
+        options: ['clear', 'clearly', 'clearer', 'clearest'],
+        answer: 'clearer',
+      },
+    ],
+  },
+  {
+    title: 'Vocabulary: Office and Travel',
+    passage: 'Choose the best meaning or word for each TOEIC-style sentence.',
+    questions: [
+      {
+        id: 'r25',
+        prompt: 'A "reservation" is closest in meaning to _____.',
+        options: ['a booking', 'a complaint', 'a discount', 'a repair'],
+        answer: 'a booking',
+      },
+      {
+        id: 'r26',
+        prompt: 'The word "mandatory" means _____.',
+        options: ['optional', 'required', 'expensive', 'temporary'],
+        answer: 'required',
+      },
+      {
+        id: 'r27',
+        prompt: 'Please _____ the document to the email.',
+        options: ['attach', 'arrive', 'attend', 'announce'],
+        answer: 'attach',
+      },
+      {
+        id: 'r28',
+        prompt: 'A "venue" is a _____.',
+        options: ['meeting place', 'travel bag', 'phone number', 'job title'],
+        answer: 'meeting place',
+      },
+    ],
+  },
+  {
+    title: 'Reading: Meeting Notice',
+    passage:
+      'The product team meeting has been moved to Room 402 because the main conference room is being cleaned. The meeting will begin at 10:15 instead of 10:00. Please bring the updated sales chart and the customer feedback summary.',
+    questions: [
+      {
+        id: 'r29',
+        prompt: 'Where will the meeting take place?',
+        options: ['Room 402', 'The main conference room', 'The sales office', 'The cleaning room'],
+        answer: 'Room 402',
+      },
+      {
+        id: 'r30',
+        prompt: 'Why was the location changed?',
+        options: [
+          'The main room is being cleaned.',
+          'The sales chart is missing.',
+          'The product team is late.',
+          'Customers requested a new room.',
+        ],
+        answer: 'The main room is being cleaned.',
+      },
+      {
+        id: 'r31',
+        prompt: 'What time will the meeting begin?',
+        options: ['10:15', '10:00', '4:02', '10:50'],
+        answer: '10:15',
+      },
+      {
+        id: 'r32',
+        prompt: 'What should people bring?',
+        options: [
+          'A sales chart and feedback summary',
+          'Cleaning supplies',
+          'A product sample only',
+          'A room key',
+        ],
+        answer: 'A sales chart and feedback summary',
+      },
+    ],
+  },
+  {
+    title: 'Reading: Customer Email',
+    passage:
+      'Dear Support Team, I ordered a laptop bag last week, but I received a travel backpack instead. The backpack is useful, but it is not the item I purchased. Please tell me how to return it and receive the correct product.',
+    questions: [
+      {
+        id: 'r33',
+        prompt: 'What problem does the customer report?',
+        options: [
+          'The wrong item was delivered.',
+          'The backpack was damaged.',
+          'The order was cancelled.',
+          'The laptop was too expensive.',
+        ],
+        answer: 'The wrong item was delivered.',
+      },
+      {
+        id: 'r34',
+        prompt: 'What did the customer order?',
+        options: ['A laptop bag', 'A travel backpack', 'A laptop computer', 'A suitcase'],
+        answer: 'A laptop bag',
+      },
+      {
+        id: 'r35',
+        prompt: 'What does the customer want to know?',
+        options: [
+          'How to return the item',
+          'How to repair the backpack',
+          'Where to buy a laptop',
+          'When the store opens',
+        ],
+        answer: 'How to return the item',
+      },
+      {
+        id: 'r36',
+        prompt: 'The word "purchased" is closest in meaning to _____.',
+        options: ['bought', 'borrowed', 'fixed', 'lost'],
+        answer: 'bought',
+      },
+    ],
+  },
+  {
+    title: 'Reading: Short Article',
+    passage:
+      'Many small companies now use online booking systems. These systems reduce phone calls and help staff avoid scheduling mistakes. However, customers still need clear confirmation messages, especially when appointments are changed or cancelled.',
+    questions: [
+      {
+        id: 'r37',
+        prompt: 'What is one benefit of online booking systems?',
+        options: [
+          'They reduce phone calls.',
+          'They remove all staff jobs.',
+          'They make appointments longer.',
+          'They cancel every meeting.',
+        ],
+        answer: 'They reduce phone calls.',
+      },
+      {
+        id: 'r38',
+        prompt: 'What problem can the systems help staff avoid?',
+        options: ['Scheduling mistakes', 'Customer feedback', 'Online payments', 'Long articles'],
+        answer: 'Scheduling mistakes',
+      },
+      {
+        id: 'r39',
+        prompt: 'What do customers still need?',
+        options: ['Clear confirmation messages', 'More phone calls', 'Fewer appointments', 'A new company'],
+        answer: 'Clear confirmation messages',
+      },
+      {
+        id: 'r40',
+        prompt: 'The article is mainly about _____.',
+        options: [
+          'online booking systems',
+          'office furniture',
+          'travel backpacks',
+          'language classes',
+        ],
+        answer: 'online booking systems',
+      },
+    ],
+  },
+];
+
+const extraListeningTasks = [
+  {
+    title: 'Listening: Schedule Change',
+    audioText:
+      'Attention staff. Today’s safety training will begin at one thirty, not one fifteen. Please go to Room B and bring your employee card.',
+    questions: [
+      {
+        id: 'l21',
+        prompt: 'What time will the training begin?',
+        options: ['1:30', '1:15', '12:30', '2:15'],
+        answer: '1:30',
+      },
+      {
+        id: 'l22',
+        prompt: 'Where should staff go?',
+        options: ['Room B', 'Room D', 'The lobby', 'The parking area'],
+        answer: 'Room B',
+      },
+      {
+        id: 'l23',
+        prompt: 'What should staff bring?',
+        options: ['An employee card', 'A laptop bag', 'A sales report', 'A receipt'],
+        answer: 'An employee card',
+      },
+      {
+        id: 'l24',
+        prompt: 'What is the announcement about?',
+        options: ['Safety training', 'A customer refund', 'A new product', 'A hotel booking'],
+        answer: 'Safety training',
+      },
+    ],
+  },
+  {
+    title: 'Listening: Store Message',
+    audioText:
+      'Thank you for calling City Electronics. Your repaired phone is ready for pickup. Please bring your receipt and come before six p.m. today.',
+    questions: [
+      {
+        id: 'l25',
+        prompt: 'What is ready for pickup?',
+        options: ['A repaired phone', 'A new laptop', 'A travel bag', 'A printer'],
+        answer: 'A repaired phone',
+      },
+      {
+        id: 'l26',
+        prompt: 'What should the customer bring?',
+        options: ['A receipt', 'A contract', 'A passport', 'A schedule'],
+        answer: 'A receipt',
+      },
+      {
+        id: 'l27',
+        prompt: 'When should the customer come?',
+        options: ['Before six p.m. today', 'Tomorrow morning', 'After Friday', 'At ten thirty'],
+        answer: 'Before six p.m. today',
+      },
+      {
+        id: 'l28',
+        prompt: 'What kind of business is City Electronics?',
+        options: ['An electronics store', 'A restaurant', 'A hotel', 'A travel agency'],
+        answer: 'An electronics store',
+      },
+    ],
+  },
+  {
+    title: 'Listening: Office Dialogue',
+    audioText:
+      'Woman: Did you send the invoice to the supplier? Man: Not yet. I’m checking the price list first. Woman: Please send it before lunch because the manager needs it today.',
+    questions: [
+      {
+        id: 'l29',
+        prompt: 'What has the man not sent yet?',
+        options: ['The invoice', 'The price list', 'The lunch order', 'The manager'],
+        answer: 'The invoice',
+      },
+      {
+        id: 'l30',
+        prompt: 'What is the man checking?',
+        options: ['The price list', 'The meeting room', 'The training schedule', 'The phone number'],
+        answer: 'The price list',
+      },
+      {
+        id: 'l31',
+        prompt: 'When should he send it?',
+        options: ['Before lunch', 'After work', 'Next week', 'At six p.m.'],
+        answer: 'Before lunch',
+      },
+      {
+        id: 'l32',
+        prompt: 'Who needs it today?',
+        options: ['The manager', 'The supplier', 'The receptionist', 'The customer'],
+        answer: 'The manager',
+      },
+    ],
+  },
+  {
+    title: 'Listening: Travel Information',
+    audioText:
+      'Passengers for bus 18 should wait at gate four. The bus to the airport is delayed by twenty minutes because of heavy traffic downtown.',
+    questions: [
+      {
+        id: 'l33',
+        prompt: 'Which bus is mentioned?',
+        options: ['Bus 18', 'Bus 8', 'Bus 80', 'Bus 40'],
+        answer: 'Bus 18',
+      },
+      {
+        id: 'l34',
+        prompt: 'Where should passengers wait?',
+        options: ['Gate four', 'Gate five', 'The airport', 'Downtown'],
+        answer: 'Gate four',
+      },
+      {
+        id: 'l35',
+        prompt: 'How long is the delay?',
+        options: ['Twenty minutes', 'Ten minutes', 'Forty minutes', 'Two minutes'],
+        answer: 'Twenty minutes',
+      },
+      {
+        id: 'l36',
+        prompt: 'Why is the bus delayed?',
+        options: ['Because of heavy traffic', 'Because of bad weather', 'Because of a meeting', 'Because of a refund'],
+        answer: 'Because of heavy traffic',
+      },
+    ],
+  },
+  {
+    title: 'Listening: Mini Lecture',
+    audioText:
+      'For new language learners, reviewing mistakes is more useful than only counting correct answers. A wrong answer can show a grammar problem, a missing word, or a listening sound that needs more practice.',
+    questions: [
+      {
+        id: 'l37',
+        prompt: 'What is more useful than only counting correct answers?',
+        options: ['Reviewing mistakes', 'Skipping grammar', 'Ignoring sound practice', 'Doing no review'],
+        answer: 'Reviewing mistakes',
+      },
+      {
+        id: 'l38',
+        prompt: 'What can a wrong answer show?',
+        options: ['A grammar problem', 'A perfect score', 'A finished course', 'A cancelled class'],
+        answer: 'A grammar problem',
+      },
+      {
+        id: 'l39',
+        prompt: 'Which skill is mentioned?',
+        options: ['Listening', 'Painting', 'Driving', 'Cooking'],
+        answer: 'Listening',
+      },
+      {
+        id: 'l40',
+        prompt: 'The speaker is mainly talking about _____.',
+        options: ['learning from mistakes', 'buying office equipment', 'booking a hotel', 'changing a bus route'],
+        answer: 'learning from mistakes',
+      },
+    ],
+  },
+];
+
+function shuffleItems(items) {
+  const shuffled = [...items];
+
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+
+  return shuffled;
+}
+
+function selectQuestionTasks(tasks, targetQuestionCount = 20) {
+  const selectedTasks = [];
+  let selectedCount = 0;
+
+  for (const task of shuffleItems(tasks)) {
+    if (selectedCount >= targetQuestionCount) {
+      break;
+    }
+
+    const remainingCount = targetQuestionCount - selectedCount;
+    const questions = shuffleItems(task.questions)
+      .slice(0, remainingCount)
+      .map((question) => ({
+        ...question,
+        options: shuffleItems(question.options),
+      }));
+
+    if (questions.length > 0) {
+      selectedTasks.push({ ...task, questions });
+      selectedCount += questions.length;
+    }
+  }
+
+  return selectedTasks;
+}
+
+function createPlacementTestVariant() {
+  return efSetSections.map((section) => ({
+    ...section,
+    tasks: selectQuestionTasks(
+      section.id === 'reading'
+        ? [...section.tasks, ...extraReadingTasks]
+        : [...section.tasks, ...extraListeningTasks],
+    ),
+  }));
+}
+
+function flattenTestQuestions(sections) {
+  return sections.flatMap((section) =>
+    section.tasks.flatMap((task) =>
+      task.questions.map((question) => ({
+        ...question,
+        taskTitle: task.title,
+        sectionId: section.id,
+        sectionLabel: section.label,
+      })),
+    ),
+  );
+}
+
 const cefrSources = [
   {
     name: 'EF SET - 50-minute 2-skill English test',
@@ -719,7 +1124,7 @@ const practiceFlow = [
   'Nhìn',
   'Đọc to',
   'Nói theo',
-  'Ghi âm',
+  'Ghi âm trong bước 2',
   'Làm bài tập',
   'Ôn D+1/D+3/D+7/D+30',
 ];
@@ -859,13 +1264,13 @@ const fallbackPacks = [
 ];
 
 const toeicVocabularyBank = [
-  ['appointment', '/əˈpɔɪnt.mənt/', 'cuộc hẹn', 'I have an appointment with my manager tomorrow.'],
+  ['appointment', '/əˈpɔɪnt.mənt/', 'cuộc hẹn', 'I have an appointment today.'],
   ['schedule', '/ˈskedʒ.uːl/', 'lịch trình', 'The meeting schedule is on the board.'],
   ['confirm', '/kənˈfɝːm/', 'xác nhận', 'Please confirm your reservation by email.'],
   ['cancel', '/ˈkæn.səl/', 'hủy', 'The client canceled the appointment.'],
   ['department', '/dɪˈpɑːrt.mənt/', 'phòng ban', 'She works in the sales department.'],
   ['manager', '/ˈmæn.ə.dʒɚ/', 'quản lý', 'The manager will review the report.'],
-  ['employee', '/ɪmˈplɔɪ.iː/', 'nhân viên', 'Every employee must wear an ID card.'],
+  ['employee', '/ɪmˈplɔɪ.iː/', 'nhân viên', 'Employees wear ID cards.'],
   ['customer', '/ˈkʌs.tə.mɚ/', 'khách hàng', 'The customer asked for a receipt.'],
   ['receipt', '/rɪˈsiːt/', 'hóa đơn', 'Please keep your receipt.'],
   ['invoice', '/ˈɪn.vɔɪs/', 'hóa đơn thanh toán', 'The invoice was sent yesterday.'],
@@ -878,9 +1283,9 @@ const toeicVocabularyBank = [
   ['supplier', '/səˈplaɪ.ɚ/', 'nhà cung cấp', 'We need a reliable supplier.'],
   ['product', '/ˈprɑː.dʌkt/', 'sản phẩm', 'This product is popular with customers.'],
   ['price', '/praɪs/', 'giá', 'The price is too high.'],
-  ['discount', '/ˈdɪs.kaʊnt/', 'giảm giá', 'The store offers a ten percent discount.'],
+  ['discount', '/ˈdɪs.kaʊnt/', 'giảm giá', 'The store offers a discount.'],
   ['refund', '/ˈriː.fʌnd/', 'hoàn tiền', 'The customer requested a refund.'],
-  ['purchase', '/ˈpɝː.tʃəs/', 'mua hàng', 'We need to purchase new chairs.'],
+  ['purchase', '/ˈpɝː.tʃəs/', 'mua hàng', 'We need to purchase chairs.'],
   ['order', '/ˈɔːr.dɚ/', 'đơn hàng/đặt hàng', 'The order will arrive tomorrow.'],
   ['deliver', '/dɪˈlɪv.ɚ/', 'giao hàng', 'They deliver packages every morning.'],
   ['package', '/ˈpæk.ɪdʒ/', 'gói hàng', 'The package is on the front desk.'],
@@ -888,7 +1293,7 @@ const toeicVocabularyBank = [
   ['reserve', '/rɪˈzɝːv/', 'đặt trước', 'I would like to reserve a table.'],
   ['location', '/loʊˈkeɪ.ʃən/', 'địa điểm', 'The location is near the station.'],
   ['address', '/ˈæd.res/', 'địa chỉ', 'Please write your address here.'],
-  ['direction', '/dəˈrek.ʃən/', 'chỉ dẫn/hướng', 'Can you give me directions to the office?'],
+  ['direction', '/dəˈrek.ʃən/', 'chỉ dẫn/hướng', 'Give me directions, please.'],
   ['entrance', '/ˈen.trəns/', 'lối vào', 'The entrance is on the left.'],
   ['exit', '/ˈeɡ.zɪt/', 'lối ra', 'Use the emergency exit.'],
   ['meeting', '/ˈmiː.t̬ɪŋ/', 'cuộc họp', 'The meeting starts at nine.'],
@@ -903,37 +1308,37 @@ const toeicVocabularyBank = [
   ['hire', '/haɪr/', 'tuyển dụng', 'The company will hire two assistants.'],
   ['training', '/ˈtreɪ.nɪŋ/', 'đào tạo', 'Staff training begins on Monday.'],
   ['position', '/pəˈzɪʃ.ən/', 'vị trí công việc', 'She applied for a new position.'],
-  ['application', '/ˌæp.ləˈkeɪ.ʃən/', 'đơn ứng tuyển', 'Submit your application by Friday.'],
+  ['application', '/ˌæp.ləˈkeɪ.ʃən/', 'đơn ứng tuyển', 'Submit your application soon.'],
   ['interview', '/ˈɪn.t̬ɚ.vjuː/', 'phỏng vấn', 'The interview is at ten o’clock.'],
   ['salary', '/ˈsæl.ɚ.i/', 'lương', 'The salary is paid monthly.'],
   ['benefit', '/ˈben.ə.fɪt/', 'phúc lợi/lợi ích', 'The job has good benefits.'],
   ['assistant', '/əˈsɪs.tənt/', 'trợ lý', 'The assistant answered the phone.'],
-  ['receptionist', '/rɪˈsep.ʃən.ɪst/', 'lễ tân', 'The receptionist greeted the visitor.'],
+  ['receptionist', '/rɪˈsep.ʃən.ɪst/', 'lễ tân', 'The receptionist greeted us.'],
   ['visitor', '/ˈvɪz.ɪ.t̬ɚ/', 'khách thăm', 'All visitors must sign in.'],
   ['equipment', '/ɪˈkwɪp.mənt/', 'thiết bị', 'The office equipment is new.'],
   ['repair', '/rɪˈper/', 'sửa chữa', 'The technician will repair the printer.'],
   ['printer', '/ˈprɪn.t̬ɚ/', 'máy in', 'The printer is out of paper.'],
   ['computer', '/kəmˈpjuː.t̬ɚ/', 'máy tính', 'My computer is not working.'],
   ['file', '/faɪl/', 'tệp/hồ sơ', 'Save the file before you leave.'],
-  ['attach', '/əˈtætʃ/', 'đính kèm', 'Please attach the document to the email.'],
+  ['attach', '/əˈtætʃ/', 'đính kèm', 'Please attach the document.'],
   ['message', '/ˈmes.ɪdʒ/', 'tin nhắn', 'I left a message for the manager.'],
   ['notify', '/ˈnoʊ.t̬ə.faɪ/', 'thông báo', 'Please notify us of any changes.'],
   ['delay', '/dɪˈleɪ/', 'trì hoãn', 'The flight was delayed.'],
   ['arrive', '/əˈraɪv/', 'đến', 'The train will arrive at noon.'],
   ['depart', '/dɪˈpɑːrt/', 'khởi hành', 'The bus departs at seven.'],
-  ['passenger', '/ˈpæs.ən.dʒɚ/', 'hành khách', 'Passengers should wait at gate five.'],
+  ['passenger', '/ˈpæs.ən.dʒɚ/', 'hành khách', 'Passengers wait at gate five.'],
   ['ticket', '/ˈtɪk.ɪt/', 'vé', 'I bought a train ticket.'],
   ['luggage', '/ˈlʌɡ.ɪdʒ/', 'hành lý', 'Her luggage is very heavy.'],
   ['reservation', '/ˌrez.ɚˈveɪ.ʃən/', 'sự đặt chỗ', 'I made a hotel reservation.'],
-  ['accommodation', '/əˌkɑː.məˈdeɪ.ʃən/', 'chỗ ở', 'The company pays for accommodation.'],
+  ['accommodation', '/əˌkɑː.məˈdeɪ.ʃən/', 'chỗ ở', 'The hotel offers accommodation.'],
   ['menu', '/ˈmen.juː/', 'thực đơn', 'Can I see the menu?'],
   ['meal', '/miːl/', 'bữa ăn', 'The meal is included in the price.'],
   ['beverage', '/ˈbev.ɚ.ɪdʒ/', 'đồ uống', 'Coffee is a popular beverage.'],
   ['recommend', '/ˌrek.əˈmend/', 'gợi ý/đề xuất', 'Can you recommend a good restaurant?'],
-  ['responsible', '/rɪˈspɑːn.sə.bəl/', 'chịu trách nhiệm', 'She is responsible for the schedule.'],
+  ['responsible', '/rɪˈspɑːn.sə.bəl/', 'chịu trách nhiệm', 'She is responsible for sales.'],
   ['prepare', '/prɪˈper/', 'chuẩn bị', 'Please prepare the meeting room.'],
   ['organize', '/ˈɔːr.ɡən.aɪz/', 'tổ chức/sắp xếp', 'We need to organize the files.'],
-  ['improve', '/ɪmˈpruːv/', 'cải thiện', 'The team wants to improve customer service.'],
+  ['improve', '/ɪmˈpruːv/', 'cải thiện', 'The team wants to improve service.'],
 ];
 
 function buildDailyVocabulary(baseVocabulary, day) {
@@ -1164,17 +1569,6 @@ const TEST_DURATION_SECONDS = 50 * 60;
 const RESULT_HISTORY_KEY = 'vocabulary-boost-test-history';
 const LESSON_PROGRESS_KEY = 'vocabulary-boost-lesson-progress';
 
-const testQuestions = efSetSections.flatMap((section) =>
-  section.tasks.flatMap((task) =>
-    task.questions.map((question) => ({
-      ...question,
-      taskTitle: task.title,
-      sectionId: section.id,
-      sectionLabel: section.label,
-    })),
-  ),
-);
-
 function formatTime(totalSeconds) {
   const minutes = Math.floor(totalSeconds / 60);
   const seconds = totalSeconds % 60;
@@ -1219,16 +1613,25 @@ function App() {
   const savedAttemptRef = useRef(false);
   const mediaRecorderRef = useRef(null);
   const recordedChunksRef = useRef([]);
+  const speechQueueRef = useRef([]);
+  const speechIndexRef = useRef(0);
   const [answers, setAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [started, setStarted] = useState(false);
   const [attemptSaved, setAttemptSaved] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(TEST_DURATION_SECONDS);
+  const [currentTestSections, setCurrentTestSections] = useState(() => createPlacementTestVariant());
   const [selectedLessonDay, setSelectedLessonDay] = useState(1);
   const [lessonAnswers, setLessonAnswers] = useState({});
   const [lessonChecked, setLessonChecked] = useState(false);
   const [recordingUrl, setRecordingUrl] = useState('');
   const [isRecording, setIsRecording] = useState(false);
+  const [lessonAudio, setLessonAudio] = useState({
+    mode: '',
+    isPlaying: false,
+    isPaused: false,
+    activeKey: '',
+  });
   const [lessonProgress, setLessonProgress] = useState(() => {
     try {
       const savedProgress = window.localStorage.getItem(LESSON_PROGRESS_KEY);
@@ -1249,7 +1652,11 @@ function App() {
   });
 
   const completedCount = Object.keys(answers).length;
-  const progress = Math.round((completedCount / testQuestions.length) * 100);
+  const currentTestQuestions = useMemo(
+    () => flattenTestQuestions(currentTestSections),
+    [currentTestSections],
+  );
+  const progress = Math.round((completedCount / currentTestQuestions.length) * 100);
   const selectedLesson = useMemo(
     () => foundationPracticeLessons.find((lesson) => lesson.day === selectedLessonDay),
     [selectedLessonDay],
@@ -1323,13 +1730,13 @@ function App() {
       return null;
     }
 
-    const correctAnswers = testQuestions.filter((question) => answers[question.id] === question.answer);
-    const score = Math.round((correctAnswers.length / testQuestions.length) * 100);
+    const correctAnswers = currentTestQuestions.filter((question) => answers[question.id] === question.answer);
+    const score = Math.round((correctAnswers.length / currentTestQuestions.length) * 100);
     const level = efSetScoreBands.find((item) => score >= item.min && score <= item.max);
     const readingCorrect = correctAnswers.filter((question) => question.sectionId === 'reading').length;
     const listeningCorrect = correctAnswers.filter((question) => question.sectionId === 'listening').length;
-    const readingTotal = testQuestions.filter((question) => question.sectionId === 'reading').length;
-    const listeningTotal = testQuestions.filter((question) => question.sectionId === 'listening').length;
+    const readingTotal = currentTestQuestions.filter((question) => question.sectionId === 'reading').length;
+    const listeningTotal = currentTestQuestions.filter((question) => question.sectionId === 'listening').length;
     const readingPercent = Math.round((readingCorrect / readingTotal) * 100);
     const listeningPercent = Math.round((listeningCorrect / listeningTotal) * 100);
     const weakSkills = getWeakSkills(readingPercent, listeningPercent);
@@ -1346,7 +1753,7 @@ function App() {
       listeningPercent,
       weakSkills,
     };
-  }, [answers, submitted]);
+  }, [answers, currentTestQuestions, submitted]);
 
   const progressStats = useMemo(() => {
     if (attemptHistory.length === 0) {
@@ -1398,7 +1805,7 @@ function App() {
       return [];
     }
 
-    return testQuestions.map((question, index) => {
+    return currentTestQuestions.map((question, index) => {
       const selectedAnswer = answers[question.id] || 'Chưa trả lời';
 
       return {
@@ -1408,7 +1815,7 @@ function App() {
         isCorrect: selectedAnswer === question.answer,
       };
     });
-  }, [answers, submitted]);
+  }, [answers, currentTestQuestions, submitted]);
 
   useEffect(() => {
     if (!started || submitted) {
@@ -1442,7 +1849,7 @@ function App() {
       score: result.score,
       level: result.level,
       correct: result.correct,
-      total: testQuestions.length,
+      total: currentTestQuestions.length,
       readingCorrect: result.readingCorrect,
       readingTotal: result.readingTotal,
       listeningCorrect: result.listeningCorrect,
@@ -1459,7 +1866,7 @@ function App() {
       return nextHistory;
     });
     setAttemptSaved(true);
-  }, [attemptSaved, result, submitted]);
+  }, [attemptSaved, currentTestQuestions.length, result, submitted]);
 
   const handleStart = () => {
     savedAttemptRef.current = false;
@@ -1467,6 +1874,7 @@ function App() {
     setSubmitted(false);
     setAttemptSaved(false);
     setTimeRemaining(TEST_DURATION_SECONDS);
+    setCurrentTestSections(createPlacementTestVariant());
     setAnswers({});
   };
 
@@ -1485,10 +1893,77 @@ function App() {
     }
 
     window.speechSynthesis.cancel();
+    speechQueueRef.current = [];
+    setLessonAudio({ mode: '', isPlaying: false, isPaused: false, activeKey: '' });
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';
     utterance.rate = 0.92;
     window.speechSynthesis.speak(utterance);
+  };
+
+  const playNextLessonAudioItem = () => {
+    const item = speechQueueRef.current[speechIndexRef.current];
+
+    if (!item || !('speechSynthesis' in window)) {
+      setLessonAudio((current) => ({ ...current, isPlaying: false, isPaused: false, activeKey: '' }));
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(item.text);
+    utterance.lang = 'en-US';
+    utterance.rate = 0.88;
+    utterance.onstart = () => {
+      setLessonAudio((current) => ({ ...current, activeKey: item.key, isPlaying: true, isPaused: false }));
+    };
+    utterance.onend = () => {
+      speechIndexRef.current += 1;
+      playNextLessonAudioItem();
+    };
+
+    window.speechSynthesis.speak(utterance);
+  };
+
+  const startLessonAudio = (mode, items) => {
+    if (!('speechSynthesis' in window)) {
+      return;
+    }
+
+    window.speechSynthesis.cancel();
+    speechQueueRef.current = items;
+    speechIndexRef.current = 0;
+    setLessonAudio({ mode, isPlaying: true, isPaused: false, activeKey: '' });
+    playNextLessonAudioItem();
+  };
+
+  const pauseLessonAudio = () => {
+    window.speechSynthesis.pause();
+    setLessonAudio((current) => ({ ...current, isPaused: true }));
+  };
+
+  const resumeLessonAudio = () => {
+    window.speechSynthesis.resume();
+    setLessonAudio((current) => ({ ...current, isPaused: false }));
+  };
+
+  const stopLessonAudio = () => {
+    window.speechSynthesis.cancel();
+    speechQueueRef.current = [];
+    speechIndexRef.current = 0;
+    setLessonAudio({ mode: '', isPlaying: false, isPaused: false, activeKey: '' });
+  };
+
+  const toggleLessonAudio = (mode, items) => {
+    if (lessonAudio.mode === mode && lessonAudio.isPlaying && !lessonAudio.isPaused) {
+      pauseLessonAudio();
+      return;
+    }
+
+    if (lessonAudio.mode === mode && lessonAudio.isPlaying && lessonAudio.isPaused) {
+      resumeLessonAudio();
+      return;
+    }
+
+    startLessonAudio(mode, items);
   };
 
   const handleLessonAnswer = (questionIndex, option) => {
@@ -1497,6 +1972,7 @@ function App() {
   };
 
   const handleLessonChange = (day) => {
+    stopLessonAudio();
     setSelectedLessonDay(day);
     setLessonAnswers({});
     setLessonChecked(false);
@@ -1673,7 +2149,7 @@ function App() {
                 <div className="progress-bar" style={{ width: `${progress}%` }} />
               </div>
               <small>
-                Đã trả lời {completedCount}/{testQuestions.length} câu ({progress}%)
+                Đã trả lời {completedCount}/{currentTestQuestions.length} câu ({progress}%)
               </small>
             </div>
 
@@ -1681,7 +2157,9 @@ function App() {
               <strong>Theo EF SET:</strong> EF SET Certificate là bài test online 50
               phút, kiểm tra Reading và Listening, điểm 0-100 tương ứng CEFR. Bài thật
               có tính adaptive nên số câu không cố định; bản practice này dùng 40 câu tự
-              biên để mô phỏng cấu trúc, không phải đề chính thức của EF.
+              biên để mô phỏng cấu trúc, không phải đề chính thức của EF. Mỗi lần bấm
+              bắt đầu, app sẽ rút 40 câu mới từ ngân hàng câu hỏi lớn hơn và xáo trộn
+              thứ tự đáp án.
             </div>
 
             {!started ? (
@@ -1718,7 +2196,7 @@ function App() {
                 </button>
               </div>
             ) : (
-              efSetSections.map((section) => (
+              currentTestSections.map((section) => (
                 <div className="test-section-block" key={section.id}>
                   <div className="test-section-header">
                     <span>{section.minutes} phút</span>
@@ -1800,7 +2278,7 @@ function App() {
                     <h3>Chi tiết câu trả lời</h3>
                   </div>
                   <span className="review-score">
-                    Sai {testQuestions.length - result.correct}/{testQuestions.length}
+                    Sai {currentTestQuestions.length - result.correct}/{currentTestQuestions.length}
                   </span>
                 </div>
 
@@ -1851,7 +2329,7 @@ function App() {
                   {result.score}/100 - {result.level}
                 </h3>
                 <p>
-                  Đúng {result.correct}/{testQuestions.length} câu. Reading:{' '}
+                  Đúng {result.correct}/{currentTestQuestions.length} câu. Reading:{' '}
                   {result.readingCorrect}/{result.readingTotal}. Listening:{' '}
                   {result.listeningCorrect}/{result.listeningTotal}. {result.advice}
                 </p>
@@ -2047,27 +2525,68 @@ function App() {
                   className="audio-button"
                   type="button"
                   onClick={() =>
-                    playAudio(selectedLesson.vocabulary.map((item) => `${item[0]}. ${item[3]}`).join(' '))
+                    toggleLessonAudio(
+                      'vocabulary',
+                      selectedLesson.vocabulary.map(([word, , , example], index) => ({
+                        key: `vocab-${index}`,
+                        text: `${word}. ${example}`,
+                      })),
+                    )
                   }
                 >
-                  Nghe từ vựng
+                  {lessonAudio.mode === 'vocabulary' && lessonAudio.isPlaying && !lessonAudio.isPaused
+                    ? 'Pause từ vựng'
+                    : lessonAudio.mode === 'vocabulary' && lessonAudio.isPaused
+                      ? 'Play tiếp từ vựng'
+                      : 'Nghe từ vựng'}
                 </button>
                 <button
                   className="audio-button"
                   type="button"
-                  onClick={() => playAudio(selectedLesson.dialogue.join(' '))}
+                  onClick={() =>
+                    toggleLessonAudio(
+                      'dialogue',
+                      selectedLesson.dialogue.map((line, index) => ({
+                        key: `dialogue-${index}`,
+                        text: line,
+                      })),
+                    )
+                  }
                 >
-                  Nghe hội thoại
+                  {lessonAudio.mode === 'dialogue' && lessonAudio.isPlaying && !lessonAudio.isPaused
+                    ? 'Pause hội thoại'
+                    : lessonAudio.mode === 'dialogue' && lessonAudio.isPaused
+                      ? 'Play tiếp hội thoại'
+                      : 'Nghe hội thoại'}
                 </button>
+                {lessonAudio.isPlaying ? (
+                  <button className="audio-button secondary-audio-button" type="button" onClick={stopLessonAudio}>
+                    Dừng nghe
+                  </button>
+                ) : null}
               </div>
               <div className="vocab-table">
-                {selectedLesson.vocabulary.map(([word, ipa, meaning, example]) => (
-                  <div className="vocab-row" key={word}>
+                {selectedLesson.vocabulary.map(([word, ipa, meaning, example], index) => (
+                  <div
+                    className={`vocab-row ${lessonAudio.activeKey === `vocab-${index}` ? 'speaking-active' : ''}`}
+                    key={word}
+                  >
                     <strong>{word}</strong>
                     <span>{ipa}</span>
                     <p>{meaning}</p>
-                    <small>{example}</small>
+                    <small className={example.length > 34 ? 'compact-example' : ''}>{example}</small>
                   </div>
+                ))}
+              </div>
+              <div className="dialogue-preview">
+                <strong>Dialogue transcript</strong>
+                {selectedLesson.dialogue.map((line, index) => (
+                  <p
+                    className={lessonAudio.activeKey === `dialogue-${index}` ? 'speaking-active' : ''}
+                    key={line}
+                  >
+                    {line}
+                  </p>
                 ))}
               </div>
             </section>
@@ -2097,14 +2616,9 @@ function App() {
                   Nghe shadowing
                 </button>
               </div>
-            </section>
-
-            <section className="practice-panel">
-              <div className="panel-heading">
-                <h3>3. Ghi âm</h3>
-                <p>Ghi âm phần shadowing, nghe lại và tự so sánh với audio mẫu.</p>
-              </div>
-              <div className="recording-box">
+              <div className="recording-box inline-recording-box">
+                <strong>Ghi âm phần shadowing</strong>
+                <p>Đọc theo audio mẫu, ghi âm lại, rồi nghe và tự so sánh phát âm.</p>
                 <button
                   className={`button ${isRecording ? 'ghost' : 'primary'}`}
                   type="button"
@@ -2118,7 +2632,7 @@ function App() {
 
             <section className="practice-panel">
               <div className="panel-heading">
-                <h3>4. Learn + Reading</h3>
+                <h3>3. Learn + Reading</h3>
                 <p>Học ngữ pháp trọng tâm và đọc đoạn ngắn trình độ A1.</p>
               </div>
               <div className="grammar-box">
@@ -2136,7 +2650,7 @@ function App() {
 
             <section className="practice-panel wide-panel">
               <div className="panel-heading">
-                <h3>5. Làm bài tập + TOEIC Mini</h3>
+                <h3>4. Làm bài tập + TOEIC Mini</h3>
                 <p>Làm quiz nhanh, kiểm tra đáp án, sau đó bấm hoàn thành để tạo lịch ôn.</p>
               </div>
               <div className="lesson-quiz-list">
@@ -2240,7 +2754,7 @@ function App() {
 
             <section className="practice-panel wide-panel">
               <div className="panel-heading">
-                <h3>6. Lịch ôn cách quãng</h3>
+                <h3>5. Lịch ôn cách quãng</h3>
                 <p>Sau khi hoàn thành bài, app lưu lịch ôn D+1, D+3, D+7 và D+30.</p>
               </div>
               <div className="review-schedule-grid">
